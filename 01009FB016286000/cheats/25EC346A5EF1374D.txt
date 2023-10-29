@@ -1,0 +1,109 @@
+[Sonic Origins v1.4.0 TID 01009FB016286000 BID 25EC346A5EF1374D]
+
+[❶ Sonic the Hedgehog]
+20000000
+
+[invincibility (Sonic 1+2)]
+040F0000 024555BC 80000000 
+
+[No drowning Sonic (Sonic 1+2)]
+020F0000 024555A8 00000000
+
+[999 Rings(Sonic 1+2)]
+020F0000 0245559C 000003E7
+
+[Score 999999 (Sonic 1)]
+040F0000 0244D84C 000F423F
+
+[❷ Sonic the Hedgehog 2]
+20000000
+
+[No drowning (Sonic 1+2)]
+020F0000 024555A8 00000000
+
+[999 Rings (Sonic 1+2)]
+020F0000 0245559C 000003E7
+
+[Score 999999 (Sonic 2)]
+040F0000 0244D850 000F423F
+
+[900 Rings Special Stage (Sonic 2)]
+020F0000 024557CC 00000384
+
+[Invincibility (Sonic 3+K )]
+04000000 02A780A4 80000000 
+
+[No drowning (Sonic 3+K )]
+020F0000 02A78098 00000000
+
+[999 Rings (Sonic 3+K )]
+020F0000 02A77F88 000003E7
+
+[Infinite Time (Sonic 3+K )]
+010F0000 030AB075 00000001
+
+[Score 9999999 (Sonic 3+K )]
+040F0000 02A77F90 0098967F
+
+[Only Need 1 Blue Orb to clear Special Stage (Sonic 3+K )]
+04100000 47A7E890 00000001
+
+[Debug Mode ON ZR OFF ZL (Sonic 3+K )]
+80000200
+010F0000 030AB064 00000001
+20000000
+80000100
+010F0000 030AB064 00000000
+20000000
+
+[❹ Sonic CD]
+20000000
+
+[Invincibility (Sonic CD)]
+08000000 022C5278 00000000 00000010
+
+[999 Rings (Sonic CD)]
+020F0000 022C5268 000003E7
+
+[Score 999999 (Sonic CD)]
+040F0000 022BD520 000F423F
+
+[Infinite Time Special Stage (Sonic CD)]
+010F0000 022C537C 00000064
+
+[No drowning (Sonic CD)]
+020F0000 022BD52C 00000000
+
+[Universal Cheats]
+20000000
+
+[Sonic 1+2+CD Infinite Time]
+010F0000 0214B332 00000001
+
+[Debug Mode ON ZR OFF ZL Sonic 1+2+CD]
+80000200
+010F0000 0214B334 00000001
+20000000
+80000100
+010F0000 0214B334 00000000
+20000000
+
+[999 coins]
+580F0000 032AD008
+580F1000 000006E8
+780F0000 000003B4
+620F0000 00000000 000003E7
+
+[Notice for 999 coins:]
+[Start an act on any sonic game, activate the code, activate a checkpoint or finish the act then deactivate the code.]
+
+[Notice for Debug Mode:]
+[Press ZR to activate or ZL to deactivate.]
+[you can leave the debug mode activated in the story mode, the game still saves. But in Anniversary, Classic and Mirror modes the game does not save with debug mode.]
+
+[Cheat Credits: Gamerjin - w55212235333 - Bibiz - TomSwitch - TKT]
+00000000 00000000 00000000
+[Gamerjin - (invincibility 1+2+3&K+CD) (SuperSonic Anytime S3&k)]
+[Bibiz (Debug Mode - No Drowning - 999 Rings All Games- INF Time]
+[w55212235333 Sonic1+2 Rings - (Invincibility Refrence)]
+[TomSwitch (1 min Ring All Games)]

@@ -1,0 +1,156 @@
+[Sonic Origins TID 01009FB016286000 BID BC6146A36AE559C0 v1.1.0]
+
+[❶ Sonic the Hedgehog]
+20000000
+
+[invincibility (1+2)]
+08000000 02453598 00000002 00000010 
+
+[999 Rings Sonic 1 ]
+04000000 0245357C 000003E7
+
+[No drowning Sonic 1+2]
+020F0000 02453588 00000000
+
+[Infinite Time Sonic 1+2]
+010F0000 02149312 00000001
+
+[Max Life Number Random]
+04000000 0244B82C 054C5638
+
+[Max Score Sonic 1]
+040F0000 0244B82C 000F423F
+
+[❷ Sonic the Hedgehog 2]
+20000000
+
+[invincibility (1+2)]
+08000000 02453598 00000002 00000010 
+
+[No Drowning Sonic 1+2]
+020F0000 02453588 00000000
+
+[999 Rings Sonic 2]
+04000000 0245357C 000003E7
+
+[900 Rings Special Stage Sonic 2]
+04000000 024537AC 00000384
+
+[Infinite Time Sonic 1+2]
+010F0000 02149312 00000001
+
+[Max Score Sonic 2]
+040F0000 0244B830 000F423F
+
+[❸ Sonic the Hedgehog 3 & Knuckles]
+20000000
+
+[Invincibility S3&K]
+04000000 00179700 5280006A
+[Off]
+04000000 00179700 B941EE6A 
+
+[No Drowning Sonic S3&K]
+020F0000 02A76078 00000000
+
+[999 Rings Sonic S3&K]
+020F0000 02A75F68 000003E7
+
+[999 Lives Sonic S3&K]
+04000000 02A75F68 000003E7
+
+[Max Score Sonic S3&K]
+040F0000 02A75F70 0098967F
+
+[Sonic 3&K Only Need 1 Blue Orb Special Stage] 
+04100000 47A03088 00000001 
+
+[Infinite Time Sonic S3&K]
+010F0000 030A9055 00000001
+
+[SuperSonic Anytime*]
+04000000 0017A7B8 71000129 
+04000000 0017D358 52800008
+[*Note: must have the chaos emeralds collected....]
+[all this does is bend the rule of transformation, so when you are getting the super emeralds, you cant turn super....]
+
+[❹ Sonic CD]
+20000000
+
+[Invincibility Sonic CD]
+04000000 0001763C 5280002C
+
+[No drowning Sonic CD]
+020F0000 022BB50C 00000000
+
+[999 Rings Sonic CD]
+020F0000 022C3248 000003E7
+
+[999 Lives Sonic CD]
+04000000 022C3248 000003E7
+ 
+[Infinite Time Sonic CD]
+010F0000 02149312 00000001
+
+[Infinite Time Special Stage]
+010F0000 022C335C 00000064
+
+[Max Score Sonic CD]
+040F0000 022BB500 000F423F
+
+[Universal Cheats]
+20000000
+
+[Debug Mode (ON ZR) (OFF ZL) Sonic 1+2+CD]
+80000200
+010F0000 02149314 00000001
+20000000
+80000100
+010F0000 02149314 00000000
+20000000
+
+[Debug Mode (ON ZR) (OFF ZL) S3&K]
+80000200
+010F0000 030A9044 00000001
+20000000
+80000100
+010F0000 030A9044 00000000
+20000000
+
+[Have Minimum 1 Ring (All games)]
+11050000 022C3248 00000000
+04000000 022C3248 00000001
+20000000
+11050000 0245357C 00000000
+04000000 0245357C 00000001
+20000000
+11050000 0245357C 00000000
+04000000 0245357C 00000001
+20000000
+11050000 02A75F68 00000000
+04000000 02A75F68 00000001
+20000000
+
+[999 coins (All Games)]
+580F0000 03361B80
+580F1000 000000E0
+580F1000 000007E0
+580F1000 00000058
+580F1000 000001B8
+780F0000 00000044
+620F0000 00000000 000003E7
+
+[Notice for 999 coins:]
+[Start an act on any sonic game, activate the code, activate a checkpoint or finish the act then deactivate the code.]
+
+[Notice for Debug Mode:]
+[Press ZR to activate or ZL to deactivate.]
+[you can leave the debug mode activated in the story mode, the game still saves. But in Anniversary, Classic and Mirror modes the game does not save with debug mode.]
+
+[Cheat Credits: Gamerjin - w55212235333 - Bibiz - TomSwitch - TKT]
+00000000 00000000 00000000
+[Gamerjin - (invincibility 1+2+3&K+CD) (SuperSonic Anytime S3&k)]
+[Bibiz (Debug Mode - No Drowning - 999 Rings All Games- INF Time]
+[w55212235333 Sonic1+2 Rings - (Invincibility Refrence)]
+[TomSwitch (1 min Ring All Games)]
+

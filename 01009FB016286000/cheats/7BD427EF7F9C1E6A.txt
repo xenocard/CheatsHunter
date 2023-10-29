@@ -1,0 +1,263 @@
+{Sonic Origins v2.0.0 TID: 01009FB016286000 BID: 7BD427EF7F9C1E6A}
+040C0000 00035148 B940358C
+040C0000 0001CEBC B940198C
+040C0000 0018259C B941EE6A
+080C0000 00A79FD0 3A737469 64657243
+080C0000 00A79FD8 705F797A 6172635F
+
+[❶ Sonic the Hedgehog 1+2]
+20000000
+
+[Invincible]
+010C0000 024F52A4 0000000C
+
+[999 Rings]
+020C0000 024F5284 000003E7
+
+[No Drowning]
+020C0000 024F5290 00000000
+
+[Time 0:00]
+040C0000 021EAF48 00000000
+
+[Tails Never Exhausted]
+020C0000 024F5288 00000000
+
+[❸ Sonic the Hedgehog 3 & Knuckles]
+20000000
+
+[Invincible]
+010C0000 02B17D8C 0000000C 
+
+[999 Rings]
+020C0000 02B17C70 000003E7
+
+[No Drowning]
+020C0000 02B17D80 00000000
+
+[Time 0:00]
+040C0000 0314AD6C 00000000
+
+[❹ Sonic CD]
+20000000
+
+[Invincible]
+010C0000 02364E90 0000000C 
+
+[999 Rings]
+020C0000 02364E80 000003E7
+
+[No Drowning]
+020C0000 0235D144 00000000
+
+[Time 0:00]
+040C0000 021EAF48 00000000
+
+[ ASM Invincible Cheats ]
+20000000
+
+[Sonic The Hedgehog 1 & 2]
+040C0000 00035148 5280002C
+
+[Sonic The Hedgehog 3 & Knuckles]
+040C0000 0018259C 5280018A
+
+[Sonic CD]
+040C0000 0001CEBC 5280018C
+
+[ Debug Mode ]
+20000000
+
+[! Enable @ Title/Press Start Screen !]
+00000000 00000000 00000000
+
+[ Sonic The Hedgehog 1 & 2 Debug]
+20000000
+
+[Select Level]
+010C0000 024ED4EC 00000001
+
+[Debug Mode]
+010C0000 021EAF4C 00000001
+
+[ Sonic The Hedgehog 3 & Knuckles Debug ]
+20000000
+
+[Select Level]
+011C0000 47A7C1D8 00000001
+
+[Debug Mode]
+010C0000 0314AD5C 00000001
+
+[Sonic CD Debug]
+20000000
+
+[Debug Mode]
+010C0000 021EAF4C 00000001
+
+[ Button Cheats (notes)]
+20000000
+
+[! Enable @ Title/Press Start Screen !]
+00000000 00000000 00000000
+
+[Sonic The Hedgehog 1 Button Cheat]
+00000000 00000000 00000000
+
+[Select Level]
+00000000 00000000 00000000
+
+[Input: ↑,↓,←,→]
+00000000 00000000 00000000
+
+[Debug Mode]
+00000000 00000000 00000000
+
+[Play Song: 1,9,9,1,0,6,2,3]
+00000000 00000000 00000000
+
+[ Sonic The Hedgehog 2 Button Cheat (Notes)]
+20000000
+
+[Select Level]
+00000000 00000000 00000000
+
+[Input: ↑,↑,↑,↓,↓,↓,←,→,←,→]
+00000000 00000000 00000000
+
+[Debug Mode]
+00000000 00000000 00000000
+
+[Play Song: 1,9,9,2,1,1,2,4]
+00000000 00000000 00000000
+
+[ Sonic The Hedgehog 3 & Knuckles Button Cheat (notes)]
+20000000
+
+[Select Level]
+00000000 00000000 00000000
+
+[Input: ↑,↑,↓,↓,↑,↑,↑]
+00000000 00000000 00000000
+
+[Debug Mode]
+00000000 00000000 00000000
+
+[Play Song: 1,9,9,4,1,0,1,8]
+00000000 00000000 00000000
+
+
+[Credits: crazy_p]
+00000000 00000000 00000000
+
+[Gamerjin cheats]
+20000000
+
+[invincibility (1+2)]
+04000000 024F52A4 80000000 
+
+[Invincibility Sonic 3K asm]
+04000000 0018259C 5280006A 
+
+[Invincibility Sonic Cd asm]
+04010000 0001CEBC 5280002C 
+
+[Debug Mode Sonic 3+K asm on]
+04010000 00186070 52800028 
+04010000 00189060 52800029 
+[this one was weird because one controls the gravity switch, the other is item creation]
+
+[Debug Mode Sonic 3+K asm off]
+04010000 00186070 B9403508 
+04010000 00189060 B9403529 
+
+[Debug Mode Sonic cd asm on]
+08010000 0001D8C4 1400002D 5280002C
+
+[Debug Mode Sonic cd asm off]
+08010000 0001D8C4 1400002C F9433D8C 
+
+[Score Max Press ZR(All)]
+80000200
+040F0000 024ED534 000F423F
+040F0000 024ED538 000F423F
+040F0000 02B17C78 000F423F
+040F0000 0235D138 000F423F
+20000000
+
+[Zero Stage Time(ALL)]
+010F0000  021EAF4A 00000000
+010F0000  0314AD6D 00000000
+
+[Sonic CD Infinite Time Special Stage Press L]
+80000040
+010F0000 02364F94 00000064
+
+[No drowning Sonic 1+2]
+020F0000 024F5290 00000000 
+
+[No drowning Sonic 3+K]
+020F0000 02B17D80 00000000 
+
+[No drowning Sonic CD]
+020F0000 0235D144 00000000 
+
+[Sonic 3+K Only Need 1 Blue Orb Special Stage]
+80000080
+04100000 47A7E8A0 00000001
+20000000
+
+[Sonic 2 Special Stage 900 Total Rings]
+80000020
+03000000 024F5D78 00000384
+20000000
+
+[Sonic 2 Special Stage 500 P1 Rings]
+80000010
+02000000 024F54B4 000001F4
+20000000
+
+[TomSwitch]
+20000000
+
+[Rings 99]
+80000100 
+04000000 024F5284 00000063 
+04000000 02364E80 00000063 
+04000000 02B17C70 00000063 
+20000000 
+
+[Rings add]
+80000100 
+54000000 024F5284 
+74000000 00000001 
+A1000400 024F5284 
+54000000 02364E80 
+74000000 00000001 
+A1000400 02364E80 
+54000000 02B17C70 
+74000000 00000001 
+A1000400 02B17C70 
+20000000 
+
+[unused]
+20000000
+
+[No drowning Sonic 1+2 (gamerjin)]
+01010000 024F5294 00000000
+
+[Notice for 999 coins:]
+[Start an act on any sonic game, activate the code, activate a checkpoint or finish the act then deactivate the code.]
+
+[Notice for Debug Mode:]
+[Press ZR to activate or ZL to deactivate.]
+[you can leave the debug mode activated in the story mode, the game still saves. But in Anniversary, Classic and Mirror modes the game does not save with debug mode.]
+
+[Cheat Credits: Crazy P - Gamerjin - w55212235333 - Bibiz - TomSwitch - TKT]
+00000000 00000000 00000000
+
+[v1.4.0 credits (Details):]
+[Gamerjin - (invincibility 1+2+3&K+CD) (SuperSonic Anytime S3&k)]
+[Bibiz (Debug Mode - No Drowning - 999 Rings All Games- INF Time]
+[w55212235333 Sonic1+2 Rings - (Invincibility Refrence)]
+[TomSwitch (1 min Ring All Games)]
