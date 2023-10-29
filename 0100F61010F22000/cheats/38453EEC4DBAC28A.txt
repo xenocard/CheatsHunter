@@ -1,0 +1,26 @@
+[RADIANT SILVERGUN 1.0.1 TID 0100F61010F22000 BID 38453EEC4DBAC28A By Gamerjin]
+
+[invincible]
+04000000 2EE73934 00000010 
+
+[Unlimited Lives 99 (Jericoss)]
+04000000 2EEDC7A4 00000063
+
+[weapon 1 lvl]
+04000000 2EEDC7D0 7F000000 
+
+[weapon 2 lvl]
+04000000 2EEDC7D4 7F000000 
+
+[weapon 3 lvl]
+04000000 2EEDC7D8 7F000000 
+
+[Unlimited Lives (lulu5431 91TVG)]
+04000000 0004FE74 E2400000
+
+[Unlimited Lives Off]
+04000000 0004FE74 E2400001
+
+[Credits: Gamerjin - Jericoss 99 Lives - lulu5431 (Unlimited Lives)]
+20000000
+

@@ -1,0 +1,136 @@
+MONSTER HUNTER STORIES 2: WINGS OF RUIN v1.4.0
+TID: 0100E21011446000
+BID: 7940105201B13184
+
+Cheats included In text file;
+
+[60 FPS]
+[30 FPS]
+[Game Speed Toggle (L + LEFT/RIGHT/UP)]
+[(Hold L3) Game Speed x2]
+[EXP Gained After Battle = 10,000]
+[EXP Gained After Battle = 100,000]
+[EXP Gained After Battle = 500,000]
+[EXP Gained After Battle = 999,999]
+[Max Possible EXP Gained After Battle]
+[Inf. Prayer Pot Buff (Charm) + Hot & Cold Mist Effect]
+[(ZL+ZR) Prayer Pot Lvl. 20]
+[1st P.P.B. +EXP]
+[1st P.P.B. +Rare Gather]
+[1st P.P.B. +Battle Result]
+[1st P.P.B. +Rare Eggs]
+[1st P.P.B. +Kinship Gauge]
+[1st P.P.B. -Damage Taken]
+[1st P.P.B. +Damage Dealt]
+[1st P.P.B. +HP Recovery]
+[2nd P.P.B. +EXP]
+[2nd P.P.B. +Rare Gather]
+[2nd P.P.B. +Battle Result]
+[2nd P.P.B. +Rare Eggs]
+[2nd P.P.B. +Kinship Gauge]
+[2nd P.P.B. +Sell Price]
+[2nd P.P.B. -Purchase Price]
+[2nd P.P.B. -Damage Taken]
+[2nd P.P.B. +Damage Dealt]
+[2nd P.P.B. +HP Recovery]
+[Monstie's Size Toggle ZR+DPad/R STICK]
+[All 12 EGGS From Stable Has Amazing Smell]
+[All Weapons You Own Are Lvl. 1]
+[All Weapons You Own Are Lvl. Max]
+[All Armors You Own Are Lvl. 1]
+[All Armors You Own Are Lvl. Max]
+
+
+Notes;
+
+1.) Note about the 60 FPS Cheat.
+No it will not magically put your FPS to 60 when you use it. Try Overclocking your Switch to Max and The FPS is still not Stable at 60 (Except if you're in a light Area like your House). The Switch is Weak to Achieve Constant 60 FPS for this Game.
+
+2.) [Game Speed Toggle] Button Combos;
+
+
+Normal Speed (x1) = L + Dpad UP
+Slightly Faster Speed (x1.5) = L + Dpad LEFT
+Faster Speed (x2) = L + Dpad RIGHT
+
+Note : [Game Speed Toggle] will not work Properly if [(Hold L3) Game Speed x2] is active.
+
+3.) [(ZL+ZR) Prayer Pot Lvl. 20] Press the button combo then Offer a Charm at the Prayer Pot.
+
+4.) 1st P.P.B. is Prayer Pot Buff (Pray).
+Activate only one Buff.
+
+5.) 2nd P.P.B. is Prayer Pot Buff (Offer Charm).
+Activate only one Buff.
+
+6.) Can activate both 1st and 2nd P.P.B.
+Just one each. But the 2nd P.P.B. is the only shown in the Pause Menu.
+
+7.) [Monstie's Size Toggle ZR+DPad/R STICK];
+
+Button Combos;
+
+ZR + Dpad Combos Only Works in the Field(Open World) , May Crash the Game if Pressed Inside Battles;
+
+ZR + LEFT = x1
+ZR + RIGHT = x2
+ZR + DOWN = x0.5
+ZR + UP = x5
+
+ZR + R STICK Both Works in Field(Open World) and Battles;
+
+ZR + R STICK = True 100% Size Base on MH Universe.
+
+
+Thanks to :Anonymous: for helping me with the Eggs.
+And Animejin's Pointer Codes for;
+[All 12 EGGS From Stable Has Amazing Smell]
+[All Weapons You Own Are Lvl. 1]
+[All Weapons You Own Are Lvl. Max]
+[All Armors You Own Are Lvl. 1]
+[All Armors You Own Are Lvl. Max]
+
+      ▂ ▃ ▅ ▆ ▇ ▉ ▇ ▆ ▅ ▃ ▂
+▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+Cheats Hunter Master Cheat File Note:
+▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+
+[MONSTER HUNTER STORIES 2: WINGS OF RUIN v1.4.0 TID 0100E21011446000 BID 7940105201B13184]
+
+This file is shared for Private use with members of: Cheats Hunter Discord
+
+not for Public sharing
+
+About US: 
+Community Driven Cheat Sharing and Research Discussion
+
+Updating old cheats or Fixing them
+The Server Resources and Content is intended for Private Use
+
+We Try To Preserve a Full list of working Cheats that doesn't crash your console or ruin your game experience for Games That Interest the Community
+
+This is Not a Cheat Request Server
+
+we are Constantly Recruiting Contributors, Researchers and anyone who can Help Preserve the Archive for Learning Purposes
+
+Cheat Authors are welcome to Join and get special privileges in the Discord, make your own channel for Cheat code Posts and insert any kind of support you want in it
+
+Guests and None CFW Users are welcome to check the server out- You Need a CFW Switch to use the Cheats, However we can help you Mod your Game Save if you Cant Run CFW
+
+Discord Invite Link
+https://discord.io/CheatsHunter
+https://discord.gg/DqUcuVBdah
+
+Youtube Channel
+https://www.youtube.com/channel/UCbpTMSz6-qirhR5GRGgv1mQ
+
+Twitter Page
+https://twitter.com/CheatsHunter
+
+Reddit Official Page
+https://www.reddit.com/r/CheatsHunter/
+
+Known Thiefs who steal The work of others and delete Author Credits or sell it for Profit:
+JinKazama0012 (Thief who steal codes that was intended for private use between the staff of the Discord)
+PriestKos (imposter in Forum, impersonating a user from our Discord Server)
+Donny Djarum (Youtube cheat seller thief)

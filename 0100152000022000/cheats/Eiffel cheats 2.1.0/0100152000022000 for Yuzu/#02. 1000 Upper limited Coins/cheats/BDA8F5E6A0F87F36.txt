@@ -1,0 +1,2 @@
+[#02. 1000 Upper limited Coins]
+040E0000 00836C7C E3A05FFA

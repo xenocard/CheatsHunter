@@ -1,0 +1,10 @@
+Recommended minimal OC settings for battles to get 60 FPS most of time (outside of battles requirements are much lower):
+Code:
+
+handheld_charging_cpu=1581
+handheld_charging_gpu=768
+handheld_charging_mem=1600
+
+Docked mode not recommended.
+
+You need to OC CPU to better handle more enemies, OC GPU to better handle multiple graphics effects.

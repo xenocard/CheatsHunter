@@ -1,0 +1,37 @@
+faq: How to use the Master Ball or Rare Candy cheats
+
+turn these cheats On
+
+[Encounter Mod]
+04000000 00D0A610 148DABBC
+04000000 03075500 18000181
+04000000 03075504 790063E1
+04000000 03075508 18000161
+04000000 0307550C 790067E1
+04000000 03075510 18000141
+04000000 03075514 79006BE1
+04000000 03075518 18000121
+04000000 0307551C 3900DBE1
+04000000 03075520 39402288
+04000000 03075524 1772543C
+04000000 03075530 00000085
+04000000 03075534 00000000
+04000000 03075538 00000000
+04000000 0307553C 00000001
+
+[Encounter Item Masterball]
+04000000 03075538 00000001
+
+move away from where you activated the cheats to spawn a new pokemon
+Start Battle and catch the Pokémon and it will have the item (The MAster Ball if you activated that code). 
+or
+use steal Move to Take held items By Enemy Pokemons
+after you got the Item you activated
+
+Turn The cheats Off with:
+
+[Encounter Item (OFF)]
+04000000 03075538 00000000
+
+[Encounter Mod (OFF)]
+04000000 00D0A610 39402288

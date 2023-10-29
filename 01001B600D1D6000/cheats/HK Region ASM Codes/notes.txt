@@ -1,0 +1,18 @@
+[Skill proficiency multiplier customization]
+04000000 0022DEE8
+
+xx =05 double
+xx =09 4 times
+xx =0D 8 times
+xx =11 16 times
+
+[Max after skill proficiency increase]
+04000000 0022DEF8 1A8AB140
+
+[Weapon Proficiency Multiplier Customization]
+04000000 0022BF74 0B13 xx 29
+
+xx =05 double
+xx =09 4 times
+xx =0D 8 times
+xx =11 16 times

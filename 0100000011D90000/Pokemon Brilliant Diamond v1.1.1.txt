@@ -1,0 +1,140 @@
+where to place the cheats?
+
+1.0.0 Pokemon Diamond
+sd:/atmospshere/contents/0100000011D90000/cheats/F87FC6075104EC4D.txt
+1.1.0 Pokemon Diamond
+sd:/atmospshere/contents/0100000011D90000/cheats/EA058A067CBD6943.txt
+1.1.1 Pokemon Diamond
+sd:/atmospshere/contents/0100000011D90000/cheats/D9E96FB92878E345.txt
+
+[1.1.1 Credits For Various Cheats]
+1.1.1
+[Inf Pokeradar Energy] - Stoned
+[Walk Through Walls] - Pfero
+[Shiny Pokemon (HOLD L)] - Patjenova
+[Members Card] - Falo
+[Oak's Letter] - Falo
+[999x Dream Ball] - Falo
+[999x Beast Ball] - Falo
+[Outfit Modifiers]  -  Genesis Nova
+[x2 Player Speed (HOLD B)] - Patjenova
+[100% Catch Rate] - Falo
+[Catch Trainer Pokemon v1.1.0 (On)] - Falo
+[Catch Trainer Pokemon v1.1.0 (Off)] - Falo
+[Always Nature Specific wild/Egg/Fossil Pokemon] - DeathChaos25
+[Unlimited Digging] - Falo
+[Instant 40 Lightstones] - Falo
+[Instant Egg Hatch] - Falo
+[60 FPS] - 8BitWonder
+[30 FPS] - 8BitWonder
+[Ignore Evolution Conditions] - Falo
+[Encounter Codes] - Falo
+
+[1.1.0 Credits For Various Cheats]
+1.1.0
+[Inf Pokeradar Energy] - Stoned
+[99 Radar Chain] - Stoned
+[Walk Through Walls] - Pfero
+[Shiny Pokemon (HOLD L)] - Patjenova
+[Members Card] - Falo
+[Oak's Letter] - Falo
+[999x Dream Ball] - Falo
+[999x Beast Ball] - Falo
+[Outfit Modifiers]  -  Genesis Nova
+[x2 Player Speed (HOLD B)] - DeathChaos25
+[x1.5 Player Speed (HOLD B)] - Patjenova
+[100% Catch Rate] - Falo
+[Catch Trainer Pokemon v1.1.0 (On)] - Falo
+[Catch Trainer Pokemon v1.1.0 (Off)] - Falo
+[Always Nature Specific wild/Egg/Fossil Pokemon] - DeathChaos25
+[Unlimited Digging] - Falo
+[Instant 40 Lightstones] - Falo
+[60 FPS] - 8BitWonder
+[30 FPS] - 8BitWonder
+[Ignore Evolution Conditions] - Falo
+[Instant Egg Hatch] - Falo
+[Egg inherits 6IV from parents] - Falo
+[Nursery Instant Egg] - Falo
+[Disable Affection] - DeathChaos25
+[Encounter Codes] - Falo
+[IV Specific Codes] - DeathChaos25
+
+unused 1.1.1 cheats
+[Shiny Pokemon (HOLD L) 1.1.1]
+040A0000 020db088 54000720
+040A0000 020db098 54000820
+80000040
+040A0000 020db088 14000045
+040A0000 020db098 14000041
+20000000
+
+[100% Catch Rate v1.1.1 (On)]
+040B0000 01D797D8 1400000F
+
+[100% Catch Rate v1.1.1 (Off)]
+040B0000 01D797D8 350001E9
+
+[Walk Through Walls (Hold L) (v1.1)]
+04000000 01CD7554 97F0FA17
+04000000 01ABFFDC 9447CA31
+04000000 01E1C37C F0014DF5
+80000040
+04000000 01B083AC AA1F03E0
+04000000 01ABFFDC AA1F03E0
+04000000 01E1C37C AA1F03E0
+20000000
+[Pfero]
+
+[Underground]
+[Instant 40 Lightstones (v1.1.1) (On)]
+04000000 01C587CC 52800514
+04000000 01C58838 52800514
+[Instant 40 Lightstones (v1.1.1) (Off)]
+04000000 01C587CC 52800034
+04000000 01C58838 52800074
+[Falo]
+
+[Encounter On]
+04000000 01737594 18FFFDDA
+04000000 017375B8 18FFFC94
+[Encounter Off]
+04000000 0173757C 2A0503F8
+04000000 01737590 2A0103F9
+04000000 01737594 2A0003FA
+04000000 017375B8 794033B4
+[Falo]
+
+[Alternate Encounters 1.1.1]
+
+[Encounter #387 Turtwig]
+08000000 01737548 00000183 00000000
+
+[Encounter #390 Chimchar]
+08000000 01737548 00000186 00000000
+
+[Encounter #393 Piplup]
+08000000 01737548 00000189 00000000
+
+[Encounter #490 Manaphy]
+08000000 01737548 000001EA 00000000
+
+[Encounter #493 Arceus]
+08000000 01737548 000001ED 00000000
+
+-------
+
+[alternate encounter codes]
+[Encounter #387 Turtwig (v1.1.0)]
+08000000 01AFBBF8 00000183 00000000
+
+[Encounter #390 Chimchar (v1.1.0)]
+08000000 01AFBBF8 00000186 00000000
+
+[Encounter #393 Piplup (v1.1.0)]
+08000000 01AFBBF8 00000189 00000000
+
+[Encounter #490 Manaphy (v1.1.0)]
+08000000 01AFBBF8 000001EA 00000000
+
+[Encounter #493 Arceus (v1.1.0)]
+08000000 01AFBBF8 000001ED 00000000

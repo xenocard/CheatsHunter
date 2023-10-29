@@ -1,0 +1,21 @@
+[Persona 5 Royal (JP) v1.0.1 TID=0100B880154FC000 BID=708BCACA873EA32B]
+shared the same code, omitted
+
+Note: The mementos stamps rewards always do effect, even in early game
+if you want to reset, change the three 0000000A to be 00000000
+
+Revised Cheats change (no longer need to edit)
+Note: The mementos stamps rewards always do effect, even in early game
+if you restore the cheat, the status become zeros (same like Reset)
+
+Kaito B Notes:
+
+[No Random Encounters]
+If you are attacked, you will not enter the battle, which means that even if you are discovered and attacked by the enemy, there will be no battle. 
+
+[Always Attack First] + [Minimum increase in Alertness]
+The initiative is on Player side. Only the phantom thieves will enter the battle interface when they attack the enemy. Please use it with the [Alertness] Cheat
+
+This is mainly for elite monsters, and ordinary monsters can use [Stealth Mode] [First attack] may not be effective for consecutive battles under high Alert level. The enemy's action priority is high
+
+2. The persona born from the fusion, the basic data is easy to be rewarded, so sometimes it will have a high ability from the beginning. 

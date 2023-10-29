@@ -1,0 +1,11 @@
+Or you can simply use edizon se 3.75 up,
+Press ZL+B to detach the dmnt before exit edizon
+
+To Avoid Lag in Game Playing, better use Edizon SE, detach after cheat were loaded
+
+How do i open and connect to game?
+How to load the json cheat file?
+
+Json is used for JNOEXES, a tool for making cheat.
+It works on PC with JAVA 10.0.2
+

@@ -1,0 +1,48 @@
+[Disney Dreamlight Valley (US) v1.0.4 TID 0100D39012C1A000 BID D8CA15C9D1688E1E By Patjenova]
+
+[01# Inf Energy]
+040A0000 01FD9B8C 6B1F02A8
+
+[Inf Energy (off)]
+040A0000 01FD9B8C 6B1902A8
+
+[02# Get 50 Items When use or Pickup]
+040A0000 03EE19B0 52800641
+040A0000 03EE19B4 B9001C01
+040A0000 03EE19B8 D65F03C0
+
+[Get 50 Items When use or Pickup (off)]
+040A0000 03EE19B0 B9001C01
+040A0000 03EE19B4 D65F03C0
+
+[03# Exp Multiplier]
+040A0000 01FCE878 0B184101
+
+[Exp Multiplier (off)]
+040A0000 01FCE878 0B180101
+
+[04# Currency Multiplier]
+040A0000 01FD091C 0B144002
+
+[Currency Multiplier (off)]
+040A0000 01FD091C 0B140002
+
+[05# Friendship Multiplier]
+040A0000 01BC9728 0B154139
+
+[Friendship Multiplier (off)]
+040A0000 01BC9728 0B150139
+
+[06# Crops Instant Grow]
+work in progress
+[Crops Instant Grow (off)]
+
+[07# Easy Unlock Dreamlight]
+040A0000 03730364 529C1FE8
+040A0000 03730368 72A0BEA8
+
+[Easy Unlock Dreamlight (off)]
+040A0000 03730364 B9401AA9
+040A0000 03730368 0B080128
+
+[Credits To Patjenova]

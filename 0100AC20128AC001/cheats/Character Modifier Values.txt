@@ -1,0 +1,44 @@
+00 - Serge
+01 - Kid
+02 - Guile
+03 - Norris
+04 - Nikki
+05 - Viper
+06 - Riddel
+07 - Karsh
+08 - Zoah
+09 - Marcy
+0A - Korcha
+0B - Luccia (Chrono Trigger)
+0C - Poshul
+0D - Razzly
+0E - Zappa
+0F - Orcha
+10 - Radius
+11 - Fargo
+12 - Macha
+13 - Glenn (FROG!!)
+14 - Leena
+15 - Miki
+16 - Harle
+17 - Janice
+18 - Draggy
+19 - Starky
+1A - Sprigg
+1B - Mojo
+1C - Turnip
+1D - NeoFio
+1E - Greco
+1F - Skelly
+20 - Funguy
+21 - Irenes
+22 - Mel
+23 - Leah
+24 - Van
+25 - Sneff
+26 - Steena
+27 - Doc
+28 - Grobyc
+29 - Pierre
+2A - Orlha
+2B - Pip (Normal)

@@ -1,0 +1,26 @@
+[Eiyuden Chronicle: Rising]
+
+[invincible]
+04000000 01934370 B900DE60
+[Off]
+04000000 01934370 B9003E60
+
+[Fast Upgrade]
+04000000 01934E10  B9003260
+[Off]
+04000000 01934E10  B9003268
+
+[Max Money after fighting monsters]
+04000000 01D65CDC B9006409
+
+[Restore Money]
+04000000 01D65CDC B9006408
+
+[29 quest materials after getting them]
+04000000 0192F038 B900214C
+
+[Restore Material]
+04000000 0192F038 B900214B
+
+[BY W552122353分享制作 from 91TVG]
+[Source: https://www.91tvg.com/thread-299273-1-1.html]

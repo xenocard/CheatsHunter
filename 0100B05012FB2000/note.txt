@@ -1,0 +1,4 @@
+Note:
+For the 1HK trick to work well, the HP cheat has to be enabled.
+Otherwise the player is also killed in 1 touch.
+If HP cheat is disabled, the 1HK cheat will continue to work until HP changes position.

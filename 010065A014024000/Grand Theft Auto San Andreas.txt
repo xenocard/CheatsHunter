@@ -1,0 +1,114 @@
+Grand Theft Auto San Andreas
+tid:010065A014024000
+bid:7061706EF4D97B84
+ver:1.0.2
+
+lean body in the car sends away
+
+[super man on]
+04000000 012B8BC8 1E27F000
+
+[super man off]
+04000000 012B8BC8 1E2E1000
+
+[jump up normal]
+04000000 0126A3A0 1E2E1001
+
+[jump up 10x]
+04000000 0126A3A0 1E249001
+
+[jump up 20x]
+04000000 0126A3A0 1E269001
+
+[speed car normal]
+04000000 012FCB94 1E2E1001
+
+[speed car 1.x25]
+04000000 012FCB94 1E2E9001
+
+[speed car 1.x5]
+04000000 012FCB94 1E2F1001
+
+[speed car 1.x75]
+04000000 012FCB94 1E2F9001
+
+[speed car 2x]
+04000000 012FCB94 1E201001
+
+[speed car 3x]
+04000000 012FCB94 1E211001
+
+[speed car 5x]
+04000000 012FCB94 1E229001
+
+[speed car 10x]
+04000000 012FCB94 1E249001
+
+[speed biker normal]
+04000000 012FD2CC 1E2E1001
+
+[speed biker x1.25]
+04000000 012FD2CC 1E2E9001
+
+[speed biker x1.5]
+04000000 012FD2CC 1E2F1001
+
+[speed biker x1.75]
+04000000 012FD2CC 1E2F9001
+
+[speed biker x2]
+04000000 012FD2CC 1E201001
+
+[speed biker x3]
+04000000 012FD2CC 1E211001
+
+[1p speed attack normal]
+04000000 00FE63E4 1E2E1001
+
+[1p speed attack x1.25]
+04000000 00FE63E4 1E2E9001
+
+[1p speed attack x1.5]
+04000000 00FE63E4 1E2F1001
+
+[1p speed attack x1.75]
+04000000 00FE63E4 1E2F9001
+
+[1p speed attack x2]
+04000000 00FE63E4 1E201001
+
+[ speed run]
+04000000 00E10160 1E2E1002
+
+[ speed run x1.25]
+04000000 00E10160 1E2E9002
+
+[ speed run x1.5]
+04000000 00E10160 1E2F1002
+
+[ speed run x1.75]
+04000000 00E10160 1E2F9002
+
+[ speedrun x2]
+04000000 00E10160 1E201002
+
+[ speed run x5]
+04000000 00E10160 1E229002
+
+[invincible 1p or enemies on]
+04000000 00E122B0 1E27F006
+
+[invincible 1p or enemies off]
+04000000 00E122B0 1E2E1006
+
+[npc speed car, biker normal]
+04000000 00E78B64 1E2E1013
+
+[npc speed car, biker 3x]
+04000000 00E78B64 1E211013
+
+[npc speed car, biker 5x]
+04000000 00E78B64 1E229013
+
+[npc speed car, biker 10x]
+04000000 00E78B64 1E249013

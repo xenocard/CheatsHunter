@@ -1,0 +1,12 @@
+[SOL CRESTA 1.0.1 TID: 01009E20141AC000 BID: 12F5123EEEFCF347]
+[Inf Lives (need at least 1)]
+04000000 0156AF64 51000114 
+
+[Inf shield]
+04000000 015C26E8 528000C0 
+04000000 015C7C74 528000C8 
+[the shield codes does require you to either]
+[get a shield or die to get a shield, then its inf]
+
+[Dont lose SP]
+04000000 01563A04 B9001A62 

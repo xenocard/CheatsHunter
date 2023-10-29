@@ -1,0 +1,15 @@
+Precautions:
+
+1. [No Battle Encounter if attacked]
+You will not enter the battle if you are attacked, which means that even if you are discovered and attacked by the enemy, there will be no battle. The initiative is on our side. Only when the phantom thieves attack the enemy will enter the battle interface. Please use it with the vigilance. This is mainly for For elite monsters, ordinary monsters can use stealth
+
+2. [Personas have Fusion Accidents]
+The persona mask born under the accident of fusion, the basic data is easy to add rewards and there is a probability to randomly arrive at the powerful Zhongmo, the ability will be higher than the general Fusion
+
+3. [full-consumption items and gifts]
+pay attention, Don't open them all. 
+It is recommended to go to the store to sell them after opening to save the items, and then turn them off.
+you don't need to open it again in the future, gift-related issues may cause unknown problems.
+
+4. [All Members of the Phantom Thieves join (untested)]
+without detailed testing. If you want to be a Testing Guinea Pig, you can test it, although I think it should be no problem.

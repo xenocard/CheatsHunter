@@ -1,0 +1,2 @@
+[For EXP rate: 05,09,0D,12,15,19,1D,etc can be used]
+[Created by Eiffel2018]

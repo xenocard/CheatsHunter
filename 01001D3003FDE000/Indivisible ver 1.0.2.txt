@@ -1,0 +1,2 @@
+*Activate at the start of each mission
+*Sometimes enemies also have infinite life, disable it and in a few moments they can die.

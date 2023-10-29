@@ -1,0 +1,5 @@
+[Insta level 150 Player]
+04100000 C189BEB8 000003E7 
+
+[Damage indicator visual only]
+04100000 BFE43740 0001869F

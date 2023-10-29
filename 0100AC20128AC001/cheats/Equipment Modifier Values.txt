@@ -1,0 +1,221 @@
+00 - Nothing
+Forge Items
+01 - Bone
+02 - Copper
+03 - Iron
+04 - Mythril
+05 - Denadorite
+06 - Rainbow Shell
+07 - Eyeball
+08 - Humour
+09 - Feather
+0A - Scale
+0B - Fur
+0C - Leather
+0D - Fang
+0E - Carapace
+0F - Screw
+11 - Seed
+12 - Shiny Ember
+13 - Shiny Dew
+14 - Shiny Leaf
+15 - Shiny Sand
+16 - Shiny Salt
+17 - Shiny Soot
+Weapon Digits-Swallows
+20 - Sea
+21 - Copper
+22 - Steel
+23 - Silver
+24 - Stone
+25 - Spectral
+26 - Mastermune
+Weapon Digits-Daggers
+27 - Ivory
+28 - Bronze
+29 - Iron
+2A - Mythril
+2B - Denadorite
+2C - Prism
+Weapon Digits-Staffs
+2D - Silver
+2E - Stone
+2F - Spectral
+Weapon Digits-Rods
+30 - Porcelain
+31 - Brass
+32 - Iron
+33 - Mythril
+34 - Denadorite
+35 - Rainbow
+36 - Floral
+Weapon Digits-Swords
+37 - Bone
+38 - Bronze
+39 - Steel
+3A - Silver
+3B - Stone
+3C - Spectral
+3D - Hero's Blade
+3E - Viper's Venom
+3F - Einlanzer
+40 - Einlanzer
+41 - Slasher
+Weapon Digits-Guns
+42 - Ferrous
+43 - Argent
+44 - Denadorite
+45 - Spectral
+46 - Shockwave
+47 - Plasma
+Weapon Digits-Icks
+48 - Porcelain
+49 - Brass
+4A - Iron
+4B - Mythril
+4C - Pebble
+4D - Prism
+Weapon Digits-Janice Only
+4E - Carrot
+4F - Beta Carotene
+Weapon Digits-Axes/Hammers
+50 - Bone
+51 - Bronze
+52 - Iron
+53 - Silver
+54 - Stone
+55 - Rainbow
+57 - Great Hammer
+58 - Master Hammer
+Weapon Digits-Lures
+59 - Bronze
+5A - Iron
+5B - Mythril
+5C - Stone
+5D - Prism
+Weapon Digits-Boomerangs
+5F - Bronzerang
+60 - Steelerang
+61 - Silverang
+62 - Rockerang
+63 - Prismarang
+Weapon Digits-Shots/Cards
+65 - Bone
+66 - Bronze
+67 - Steel
+68 - Silver
+69 - Stone
+6A - Prism Pellets
+6B - Private Deck
+6C - Pack Of Lies
+Weapon Digits-Kitchen Utensils
+6E - Spatula Ca20
+6F - Besom Cu29
+70 - Ladle Fe26
+71 - Frypan Ag47
+72 - Saucepan Sio2
+73 - Crystalpan C6
+Weapon Digits-Gloves
+75 - Bone
+76 - Bronze
+77 - Iron
+78 - Mythril
+79 - Granite
+7A - Spectral
+Armor Digits-Mail
+96 - Ivory
+97 - Bronze
+98 - Iron
+99 - Mythril
+9A - Stone
+9B - Prism
+Armor Digits-Vests
+9C - Ivory
+9D - Bronze
+9E - Iron
+9F - Mythril
+A0 - Stone
+A1 - Prism
+Armor Digits-Special Armor
+A2 - Blue Plate
+A3 - Red Plate
+A4 - Yellow Plate
+A5 - Green Plate
+A6 - Black Plate
+A7 - White Plate
+Armor Digits-Dresses
+A8 - Feathery
+A9 - Scaley
+AA - Carapace
+AB - Screwy
+AC - Diva
+Armor Digits-Capes
+AD - Wisp
+AE - Cloud
+AF - Stardust
+Armor Digits-Suits
+B0 - Energizer
+B1 - Ghetz's Shirt
+Accessory Digits
+C0 - Hero Medal
+C1 - Hero Shield
+C2 - Ivory Helmet
+C3 - Bronze Helmet
+C4 - Iron Helmet
+C5 - Mythril Helmet
+C6 - Stone Helmet
+C7 - Prism Helmet
+C8 - Power Glove
+C9 - Dragoon Gauntlet
+CA - Power Seal
+CB - Magic Ring
+CC - Sky Djinn Ring
+CD - Magic Seal
+CE - Silver Loupe
+CF - Sight Scope
+D0 - Third Eye
+D1 - Knee Pad
+D2 - Elbow Pad
+D3 - Waist Pad
+D4 - Silver Pendant
+D5 - Gold Pendant
+D6 - Memento Pendant
+D7 - Dancing Shoes
+D8 - Kung - Fu Shoes
+D9 - Winged Shoes
+DA - Dragoon Honor
+DB - Dragoon Glory
+DC - Defender
+DD - Defender Plus
+DE - Silver Earring
+DF - Gold Earring
+E0 - Earring Of Light
+E1 - Earring Of Hope
+E2 - Stamina Ring
+E3 - Stamina Belt
+E4 - Resistance Ring
+E5 - Resistance Belt
+E6 - Sea Charm
+E7 - Flame Charm
+E8 - Forest Charm
+E9 - Earth Charm
+EA - Angel Charm
+EB - Daemon Charm
+ED - Blue Brooch
+EE - Red Brooch
+EF - Green Brooch
+EF - Yellow Brooch
+F0 - White Brooch
+F1 - Black Brooch
+F2 - Dreamer's Scarf
+F3 - Dreamer's Sash
+F4 - Trashy Tiara
+F5 - Golden Tiara
+F6 - Profiteer Purse
+F7 - Moonglasses
+F8 - Sunglasses
+F9 - Pendragon Sigil C
+FA - Pendragon Sigil B
+FB - Pendragon Sigil A
+FC - Forget - Me - Not - Pot
+FD - Star Fragment

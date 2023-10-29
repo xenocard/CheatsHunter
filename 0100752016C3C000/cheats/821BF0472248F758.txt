@@ -1,0 +1,29 @@
+[Breeze beta41 Arcade Archives ORIUS 1.0.0 TID: 0100752016C3C000 BID: 821BF0472248F758]
+
+[Inf.Credits]
+01100000 03237403 00000099 
+
+[P1 Inf.Energy]
+01100000 03239464 0000003C 
+
+[P1 Always have Max Shot Power]
+01100000 03239444 00000004 
+
+[P1 Always have Max Probe Power]
+01100000 03239520 00000002 
+
+[P1 Always have Max Homing Missile Power]
+01100000 03239462 00000003 
+
+[P2 Inf.Energy]
+01100000 03239864 0000003C 
+
+[P2 Always have Max Shot Power]
+01100000 03239844 00000004 
+
+[P2 Always have Max Probe Power]
+01100000 03239920 00000002 
+
+[P2 Always have Max Homing Missile Power]
+01100000 03239862 00000003 
+

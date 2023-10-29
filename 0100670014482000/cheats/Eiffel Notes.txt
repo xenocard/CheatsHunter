@@ -1,0 +1,17 @@
+Usage for Teleport
+1) The teleport target location according to that on the map, and the number beside mini-map is the distance between player and the TP target.
+2) By the game rule, the default target location is the current quest location. And you can change the target by press (+ or -), and mark a custom target
+3) Hold zL+zR+RightStick for at least 3 seconds. check is the final result position, then you can do some adjustment by Left-Stick (4 directions for N,E,S,W and L-stick IN for UP z-index)
+the displacement (adjustment by the L-Stick ) is +4/-4, you may adjust these float numbers (40800000/C0800000) for customize the displacement
+
+Note for the hack:
+
+1) not yet find the Durability of Armor, [Armor never damage] only affects the addition of equipment to the health value, and does not deduct
+
+2) Invincible only prevent the damage by enemies (till not find the fall damage)
+
+3) Teleport and FlyUp are buggy that cannot be fixed, however it help a lot on fast follow to the game.
+Since I can't find how to walk through the wall, the Teleport Cheat may transport the player inside wall or ground.
+You may TP again to another place (e.g. a location of river / mountain on the edge of map)
+
+4) In the churches of St. Knight, the save points are needed to be passed in order. Be careful when use the FlyUp and TP

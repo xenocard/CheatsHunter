@@ -1,0 +1,8 @@
+[Inf Coins 99999 @Matias3ds]
+04000000 01a77670 0001869F
+
+[Inf Skill Tree @Matias3ds]
+04000000 019c46d8 0001869F
+
+[Inf Gems @Matias3ds]
+04000000 01a71d3c 0001869F

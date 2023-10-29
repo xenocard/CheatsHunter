@@ -1,0 +1,89 @@
+Where to place the chetas?
+
+1.0.0 Pearl
+sd:/atmospshere/contents/010018E011D92000/cheats/1284AB14C1477243.txt
+1.1.0 Pearl
+sd:/atmospshere/contents/010018E011D92000/cheats/609FAC97880FA04C.txt
+1.1.1 Pearl
+sd:/atmospshere/contents/010018E011D92000/cheats/3C70CAE153DF0B4F.txt
+
+FAQ:
+Pkemon Shinig Pearl:
+Where do i add these codes for v1.1.1?
+SD/atmosphere/contents/010018E011D92000/cheats/3C70CAE153DF0B4F.txt
+
+--------------
+[KeithTheGeek]
+How to make an encounter code for any Pokemon you would want 1.1.1?
+
+08000000 01AFBBE8 XXXXXXX ZZZZYYYY
+XXXXXXX = National Dex ID in Hex
+YYYY = Form Id in Hex
+ZZZZ = Unused
+
+For example, Mewtwo's National Dex ID is 150, which in Hex is 96. So the code for Mewtwo in SP v1.1.1 would look like this:
+
+08000000 01AFBBE8 0000096 00000000
+
+--------------
+
+Additional Cheats:
+[1# Encounter Ditto]
+08000000 01AFBBE8 00000084 00000000
+[retta]
+
+[2# Encounter eevee]
+08000000 01AFBBE8 00000085 00000000
+[retta]
+
+[1.1.1 Credits For Various Cheats]
+1.1.1
+[Inf Pokeradar Energy] - Stoned
+[Walk Through Walls] - Pfero
+[Shiny Pokemon (HOLD L)] - Patjenova
+[Members Card] - Falo
+[Oak's Letter] - Falo
+[999x Dream Ball] - Falo
+[999x Beast Ball] - Falo
+[Outfit Modifiers]  -  Genesis Nova
+[x2 Player Speed (HOLD B)] - Patjenova
+[100% Catch Rate] - Falo
+[Catch Trainer Pokemon v1.1.0 (On)] - Falo
+[Catch Trainer Pokemon v1.1.0 (Off)] - Falo
+[Always Nature Specific wild/Egg/Fossil Pokemon] - DeathChaos25
+[Unlimited Digging] - Falo
+[Instant 40 Lightstones] - Falo
+[Instant Egg Hatch] - Falo
+[60 FPS] - 8BitWonder
+[30 FPS] - 8BitWonder
+[Ignore Evolution Conditions] - Falo
+[Encounter Codes] - Falo
+
+[1.1.0 Credits For Various Cheats]
+1.1.0
+[Inf Pokeradar Energy] - Stoned
+[99 Radar Chain] - Stoned
+[Walk Through Walls] - Pfero
+[Shiny Pokemon (HOLD L)] - Patjenova
+[Members Card] - Falo
+[Oak's Letter] - Falo
+[999x Dream Ball] - Falo
+[999x Beast Ball] - Falo
+[Outfit Modifiers]  -  Genesis Nova
+[x2 Player Speed (HOLD B)] - DeathChaos25
+[x1.5 Player Speed (HOLD B)] - Patjenova
+[100% Catch Rate] - Falo
+[Catch Trainer Pokemon v1.1.0 (On)] - Falo
+[Catch Trainer Pokemon v1.1.0 (Off)] - Falo
+[Always Nature Specific wild/Egg/Fossil Pokemon] - DeathChaos25
+[Unlimited Digging] - Falo
+[Instant 40 Lightstones] - Falo
+[60 FPS] - 8BitWonder
+[30 FPS] - 8BitWonder
+[Ignore Evolution Conditions] - Falo
+[Instant Egg Hatch] - Falo
+[Egg inherits 6IV from parents] - Falo
+[Nursery Instant Egg] - Falo
+[Disable Affection] - DeathChaos25
+[Encounter Codes] - Falo
+[IV Specific Codes] - DeathChaos25

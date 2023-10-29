@@ -1,0 +1,32 @@
+*Activate at the start of each mission
+*Sometimes enemies also have infinite life, disable it and in a few moments they can die.
+
+Eifrel notes:
+https://gbatemp.net/threads/cheat-codes-ams-and-sx-os-add-and-request.520293/post-9184573
+
+
+    The error after the end of the battle remains a possibility that can be addressed below.
+    I've deleted the game so I can't test it.
+
+    [Inf HP]
+    [[[[main+78B1C98]+88]+198]+120]+28
+    [[[[[main+78B1C98]+88]+198]+68]+120]+28
+    [[[[[main+78B1C98]+88]+198]+120]+360]+28
+
+
+    [Nude Mode (In Battle)]
+    [[[[[main+78B1C98]+B8]+78]+A0]+20]+20
+    [[[[[main+78B1C98]+B8]+80]+A0]+20]+20
+    [[[[[main+78B1C98]+10]+38]+120]+20]+20
+    [[[[[main+78B1C98]+10]+290]+90]+28]+C8
+
+
+After studying the codes,
+I'm sure the address (version 1.02) should be
+[[[[MAIN+78D1C98]+1E0]+10]+1DA8]+28 (for HP of mine)
+[[[[MAIN+78D1C98]+1E0]+18]+1DA8]+28 (for HP of enemy)
+
+(or for version 1.00)
+[[[[MAIN+078B1C98]+1E0]+10]+1DA8]+28 (for HP of mine)
+[[[[MAIN+078B1C98]+1E0]+18]+1DA8]+28 (for HP of enemy)
+

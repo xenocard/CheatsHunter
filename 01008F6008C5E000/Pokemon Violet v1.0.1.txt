@@ -1,0 +1,363 @@
+
+removed cheats v1.0.1
+
+[∞ HP (Kaito)]
+040B0000 029764D8 141BFAF2
+040B0000 030750A0 7940B408
+040B0000 030750A4 B9405002
+040B0000 030750A8 37100042
+040B0000 030750AC 2A1F03E1
+040B0000 030750B0 17E4050B
+
+[Shiny Pokemons (30FPS)(World Map)(Crash in Raids)(v2)]
+04000000 00D12BE0 12800000
+04000000 01685E1C 52800016
+04000000 01EE08F0 12800000
+[Crash the Game inside Raids]
+
+[Shiny Pokemons v2 (OFF)]
+04000000 00D12BE0 2A0803E0
+04000000 01685E1C 2A0603F6
+04000000 01EE08F0 B85FC3A0
+
+[Shiny Pokemons (15FPS)(Use in Raids)]
+040B0000 00D0A6E4 51000515
+040B0000 00D0AF48 51000517
+[will Slow Down Game to 15 FPS]
+
+[Shiny (Raids) (OFF)]
+040B0000 00D0A6E4 110006B5
+040B0000 00D0AF48 110006F7
+
+faq: How to use the Encounter any Pokemon cheats (v1.0.1)
+
+turn the cheats On:
+
+[Encounter Mod]
+04000000 00D0A610 148DABBC
+04000000 03075500 18000181
+04000000 03075504 790063E1
+04000000 03075508 18000161
+04000000 0307550C 790067E1
+04000000 03075510 18000141
+04000000 03075514 79006BE1
+04000000 03075518 18000121
+04000000 0307551C 3900DBE1
+04000000 03075520 39402288
+04000000 03075524 1772543C
+04000000 03075530 00000085
+04000000 03075534 00000000
+04000000 03075538 00000000
+04000000 0307553C 00000001
+
+
+Choose any of the following codes you want (You will need to edit your cheat file to customize these codes):
+[Encounter Pokemon "Name"(Choose 1 cheat only)]
+08000000 03075530 00000000 0000XXXX
+Example:
+
+[Encounter Pokemon 6# Charizard]
+08000000 03075530 00000000 00000006
+or
+[Encounter Pokemon 25# Pikachu]
+08000000 03075530 00000000 00000019
+
+ 
+you can keep switching the cheat for another Pokemon Encounter
+do not forget to Turn cheat off and use Default Encounter cheat, or just reset Game after you are done
+here is a complete PokeDex Encounter Compiled By @JoeriPLA
+
+----
+----
+
+faq: How to use the Master Ball or Rare Candy cheats
+
+turn these cheats On
+
+[Encounter Mod]
+04000000 00D0A610 148DABBC
+04000000 03075500 18000181
+04000000 03075504 790063E1
+04000000 03075508 18000161
+04000000 0307550C 790067E1
+04000000 03075510 18000141
+04000000 03075514 79006BE1
+04000000 03075518 18000121
+04000000 0307551C 3900DBE1
+04000000 03075520 39402288
+04000000 03075524 1772543C
+04000000 03075530 00000085
+04000000 03075534 00000000
+04000000 03075538 00000000
+04000000 0307553C 00000001
+
+[Encounter Item Masterball]
+04000000 03075538 00000001
+
+move away from where you activated the cheats to spawn a new pokemon
+Start Battle and catch the Pokémon and it will have the item (The MAster Ball if you activated that code). 
+or
+use steal Move to Take held items By Enemy Pokemons
+after you got the Item you activated
+
+Turn The cheats Off with:
+
+[Encounter Item (OFF)]
+04000000 03075538 00000000
+
+[Encounter Mod (OFF)]
+04000000 00D0A610 39402288
+
+-----
+
+[Force PidType2 (Overworld Always Shiny)]
+04000000 00D0A680 1F0108EB
+04000000 00D0B0B8 1F0C0071
+
+[Force reroll for Xoroshiro-PidType3 (Raids Always Shiny)]
+04000000 00D0AF48 1F2003D5
+
+[Game-speed-Mod 2.0x v1.0.1]
+04090000 03826ED8 03F940A
+
+[100% Capture Rate (on) (v1.0.1)]
+04000000 016D1B70 1400002C
+
+[Encounter Mod CODE ON (v1.0.1)]
+04000000 00D0A610 148DABBC
+04000000 03075500 18000181
+04000000 03075504 790063E1
+04000000 03075508 18000161
+04000000 0307550C 790067E1
+04000000 03075510 18000141
+04000000 03075514 79006BE1
+04000000 03075518 18000121
+04000000 0307551C 3900DBE1
+04000000 03075520 39402288
+04000000 03075524 1772543C
+04000000 03075530 00000085
+04000000 03075534 00000000
+04000000 03075538 00000000
+04000000 0307553C 00000001
+
+[Encounter Eevee with Held Item CODE ON (v1.0.1)]
+04000000 03075538 0000YYYY
+
+Remember to enable this code then reset the rom after you encounter your eevee holding the item so that the encounters go back to nomal.
+
+[Encounter Mod Off (v1.0.1)]
+04000000 00D0A610 39402288
+
+Replace YYYY in the code above with the 4 digit hex value that represents the item you wish to encounter.
+
+0153 TM12 Leaf Blade hex value. (not sure if its in game but thats the value for tm 12)
+
+some other noteworthy ones for the encounter items 1.0.1 ive found useful.
+
+
+00EA Leftovers
+002D HP Up
+002E Protein
+002F Iron
+0030 Carbos
+0031 Calcium
+0032 Rare Candy
+0033 PP Up
+0034 Zinc
+0035 PP Max
+
+Then after i get an item i want to clone i just use
+
+[Items Do Not Decrease ON CODE v1.0.1]
+040B0000 00042D0C 94C0C8F5
+040B0000 030750E0 D2805461
+040B0000 030750E4 F2A040A1
+040B0000 030750E8 6B01029F
+040B0000 030750EC 54000041
+040B0000 030750F0 2A1F03E8
+040B0000 030750F4 CB080148
+040B0000 030750F8 D65F03C0
+
+[Money Does Not Decrease ON CODE v1.0.1]
+040B0000 030750C8 F9400108
+040B0000 030750CC 36F80048
+040B0000 030750D0 AA1F03E8
+040B0000 030750D4 173F36D9
+040B0000 00042C34 14C0C925
+
+[Items and Money Do Not Decrees Decrease OFF CODE 1.0.1]
+04000000 00042D0C CB080148
+
+
+---
+“Pokémon Scarlet，ver1.0.1”
+“0100A3D008C5C000”
+B26A631109A29124.txt
+
+“Pokémon Violet，ver1.0.1”
+“01008F6008C5E000”
+F7F74F8045642CBE.txt
+
+[Game-speed-Mod v1.0.1]
+04090000 03826ED8 XXXXXXXX
+
+Game Speed Value
+{00FE2B50-》0.5x}
+{017D7840-》0.75x}
+{01FCA056-》1.0x(Game Default)}
+{027BC86B-》1.25x}
+{02FAF080-》1.5x}
+{037A1896-》1.75x}
+{03F940AB-》2.0x}
+{04F790D6-》2.5x}
+{05F5E100-》3.0x}
+
+---
+---
+[∞ PP]
+040B0000 02975754 4B3F0122
+[off]
+040B0000 02975754 4B220122
+
+[Encounter Eevee Holding (Hidden Ability Item) (v1.0.1)]
+04000000 03075538 00000646
+
+[Encounter Eevee Holding Ability Capsule (1 and 2 Item) (v1.0.1)]
+04000000 03075538 00000285
+
+[Encounter Mod ON CODE (v1.0.1)]
+04000000 00D0A610 148DABBC
+04000000 03075500 18000181
+04000000 03075504 790063E1
+04000000 03075508 18000161
+04000000 0307550C 790067E1
+04000000 03075510 18000141
+04000000 03075514 79006BE1
+04000000 03075518 18000121
+04000000 0307551C 3900DBE1
+04000000 03075520 39402288
+04000000 03075524 1772543C
+04000000 03075530 00000085
+04000000 03075534 00000000
+04000000 03075538 00000000
+04000000 0307553C 00000001
+
+[Encounter Mod Off (v1.0.1)]
+04000000 00D0A610 39402288​
+
+----
+----
+
+the following items exist
+Shiny Charm
+Oval Charm
+EXP Charm:  is exp share hidden
+Mark Charm
+Catching Charm: is also hidden you get upgrade version defeating the gym leaders
+--
+---
+
+[100% Capture Rate (Hold ZR)]
+04000000 016D1B70 35000588
+80000200
+04000000 016D1B70 1400002C
+20000000
+
+[100% capture (ignore Pokemon Level)on(v1.0.1)]
+04000000 016D1BD0 52800028
+04000000 016D1BDC 1400001A
+04000000 016D1C28 52800028
+04000000 016D1C54 52800028
+[100% Fast capture off(v1.0.1)]
+04000000 016D1BD0 12000008
+04000000 016D1BDC 5400034A
+04000000 016D1C28 52800068
+04000000 016D1C54 52800068
+
+[100% Fast capture on(v1.0.0)]
+04000000 016AD090 52800028
+04000000 016AD09C 1400001A
+04000000 016AD0E8 52800028
+04000000 016AD114 52800028
+[100% Fast capture off(v1.0.0)]
+04000000 016AD090 12000008
+04000000 016AD09C 5400034A
+04000000 016AD0E8 52800068
+04000000 016AD114 52800068
+
+patjenova
+[07# Items 999 When Use]
+040A0000 03075180 D2805461
+040A0000 03075184 F2A040A1
+040A0000 03075188 6B01029F
+040A0000 0307518C 54000041
+040A0000 03075190 52807CE8
+040A0000 03075194 F90002C8
+040A0000 03075198 D65F03C0
+040A0000 00042D10 94C0C91C
+
+[Inf Items When Use (off)]
+040A0000 00042D10 F90002C8
+
+
+---
+---
+
+FALO
+
+the evolution condition for Tandemaus is this:
+00: Level 25 + UNKNOWN_52 to "Maushold - Form 0"
+01: Level 25 + UNKNOWN_53 to "Maushold - Form 1"
+
+here all new evolve conditions:
+from (.text:F011C4) pml:: pokepara::EvolveManager::IsSatisfyEvolveConditionLevelUp
+UNKNOWN_50 = situation->TravelMeter > evolve_data->condValue
+UNKNOWN_51 = situation->isCoop
+UNKNOWN_52 = situation->field_D & situation->field_E & PersonalRndCalc1
+UNKNOWN_53 = !situation->field_D & !situation->field_E & PersonalRndCalc2
+UNKNOWN_54 = MONSNO_976 (Gimmighoul) & CoreBlockC->field_28 > evolve_data->condValue
+UNKNOWN_55 = MONSNO_625 (Bisharp) & CoreBlockC->field_28 > evolve_data->condValue
+UNKNOWN_56 = MONSNO_57 (Primeape) & CoreBlockC->field_28 > evolve_data->condValue
+UNKNOWN_57 = PersonalRndCalc1 & Know Move from evolve_data->condValue
+UNKNOWN_58 = PersonalRndCalc2 & Know Move from evolve_data->condValue
+UNKNOWN_59 = MONSNO_550 Form 2 (Basculin - White Striped Form) Male & CoreBlockC->field_28 > evolve_data->condValue
+UNKNOWN_60 = MONSNO_550 Form 2 (Basculin - White Striped Form) Female & CoreBlockC->field_28 > evolve_data->condValue
+UNKNOWN_61 = unused, there is no code that references this condition
+
+situation->field_D & situation->field_E are new so i don't know what these are
+CoreBlockC->field_28 is a temp variable to store pokemon specific data in the pkm file
+
+PersonalRndCalc1:
+MOV W0, PersonalRnd
+MOV W8, #0xC28F5C29
+MUL W8, W0, W8
+EXTR W8, W8, W8, #2
+MOV W9, #0x28F5C29
+CMP W8, W9
+B.CS
+
+PersonalRndCalc2:
+MOV W0, PersonalRnd
+MOV W8, #0xC28F5C29
+MUL W8, W0, W8
+EXTR W8, W8, W8, #2
+MOV W9, #0x28F5C28
+CMP W8, W9
+B.HI
+
+on that note:
+[Ignore Evolve Condition (on) (v1.0.1)]
+04000000 00F00358 52800020
+04000000 01B95640 52800020
+04000000 01EDE7C4 52800020
+[Ignore Evolve Condition (off) (v1.0.1)]
+04000000 00F00358 9400039B
+04000000 01B95640 940D2ABC
+04000000 01EDE7C4 94000627
+
+Note: if the pokemon has more then 1 condition, it will evolve to the first one in the list!
+ 
+
+
+
+

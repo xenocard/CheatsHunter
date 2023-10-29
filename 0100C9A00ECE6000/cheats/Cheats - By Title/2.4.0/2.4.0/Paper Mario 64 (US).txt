@@ -1,0 +1,479 @@
+[Aspect Ratio (All Games)]
+00000000 00000000 00000000
+
+[Aspect Ratio 16:9]
+04100000 00A6E6F4 40000000
+[Aspect Ratio 4:3]
+04100000 00A6E6F4 3FC00000
+
+[Paper Mario 64 (US)]
+00000000 00000000 00000000
+
+[Moonjump]
+580C0000 005DC0C0
+780C0000 0010F044
+610C0000 00000000 00000000
+
+[Inf. HP]
+580C0000 005DC0C0
+9801C100 00000000 0010F292
+9802C100 00000000 0010F293
+58021000 00000000
+A1210000 
+
+[Inf. FP]
+580C0000 005DC0C0
+9801C100 00000000 0010F295
+9802C100 00000000 0010F296
+58021000 00000000
+A1210000 
+
+[No Random Battles]
+580C0000 005DC0C0
+780C0000 000B0F1A
+620C0000 00000000 00000019
+
+[Always 100% Runaway]
+580C0000 005DC0C0
+780C0000 0029FC24
+620C0000 00000000 0000002A
+
+[Inf. Coins]
+580C0000 005DC0C0
+780C0000 0010F29C
+620C0000 00000000 0000E703
+
+[Max Badge Points]
+580C0000 005DC0C0
+780C0000 0010F298
+610C0000 00000000 00000063
+
+[Max Star Points]
+580C0000 005DC0C0
+780C0000 0010F2A0
+610C0000 00000000 00000063
+
+[Max Star Pieces]
+580C0000 005DC0C0
+780C0000 0010F29F
+610C0000 00000000 00000063
+
+[Have All Spirits!]
+580C0000 005DC0C0
+780C0000 0010F51E
+610C0000 00000000 00000007
+
+[Have Goobario]
+580C0000 005DC0C0
+780C0000 0010F2AC
+610C0000 00000000 00000001
+
+[Have Kooper]
+580C0000 005DC0C0
+780C0000 0010F2B4
+610C0000 00000000 00000001
+
+[Have Bombette]
+580C0000 005DC0C0
+780C0000 0010F2BC
+610C0000 00000000 00000001
+
+[Have Parakarry]
+580C0000 005DC0C0
+780C0000 0010F2C4
+610C0000 00000000 00000001
+
+[Have All Members In Your Party!]
+580C0000 005DC0C0
+780C0000 0010F2AC
+300E0000 00000005
+610C0000 00000000 00000001
+780C0000 00000008
+310E0000
+
+[Max HP = 99]
+580C0000 005DC0C0
+780C0000 0010F293
+610C0000 00000000 00000063
+
+[Max FP = 99]
+580C0000 005DC0C0
+780C0000 0010F296
+610C0000 00000000 00000063
+
+[Level = 99]
+580C0000 005DC0C0
+780C0000 0010F299
+610C0000 00000000 00000063
+
+[Play as Peach]
+580C0000 005DC0C0
+780C0000 000740A2
+610C0000 00000000 00000001
+
+[Play as Mario]
+580C0000 005DC0C0
+780C0000 000740A2
+610C0000 00000000 00000000
+
+[Slot 1 Item]
+580C0000 005DC0C0
+780C0000 0010F444
+620C0000 00000000 00000000
+
+[Slot 1 Key Item]
+580C0000 005DC0C0
+780C0000 0010F304
+620C0000 00000000 00000000
+
+[Item ID's:
+0000 - Nothing
+0100 - Jump
+0200 - Spin Jump
+0300 - Tornado Jump
+0400 - Hammer
+0500 - Super Hammer
+0600 - Ultra Hammer
+0700 - Lucky Star
+0800 - ?
+0900 - ?
+0A00 - First Degree Card
+0B00 - Second Degree Card
+0C00 - Third Degree Card
+0D00 - Fourth Degree Card
+0E00 - Diploma
+0F00 - Ultra Stone
+1000 - Fortress Key
+1100 - Ruins Key
+1200 - Pulse Stone
+1300 - Castle Key
+1400 - Palace Key
+1500 - Lunar Stone
+1600 - Pyramid Stone
+1700 - Diamond Stone
+1800 - Golden Jar
+1900 - Kooper's Shell
+1A00 - Castle Key
+1B00 - ?
+1C00 - Weight
+1D00 - Boo's Portrait
+1E00 - Crystal Berry
+1F00 - Mystical Key
+2000 - Storeroom Key
+2100 - Toy Train
+2200 - Record
+2300 - Frying Pan
+2400 - Dictonary
+2500 - Mystery Note
+2600 - ?
+2700 - Crystal Ball
+2800 - ?
+2900 - Cook Book
+2A00 - Jade Raven
+2B00 - Magical Seed (Red)
+2C00 - Magical Seed (Blue)
+2D00 - Magical Seed (Green)
+2E00 - Magical Seed (Brown-Orange)
+2F00 - ?
+3000 - Calculator
+3100 - Bucket
+3200 - Scarf
+3300 - Red Key
+3400 - Blue Key
+3500 - ?
+3600 - Letter
+3700 - Letter
+3800 - Letter
+3900 - Letter
+3A00 - Letter
+3B00 - Letter
+3C00 - Letter
+3D00 - Letter
+3E00 - Letter
+3F00 - ?
+4000 - Letter
+4100 - Letter
+4200 - ?
+4300 - ?
+4400 - ?
+4500 - Letter
+4600 - Letter
+4700 - Letter
+4800 - Letter
+4900 - Letter
+4A00 - Letter
+4B00 - Letter
+4C00 - Letter
+4D00 - ?
+4E00 - Letter
+4F00 - Letter
+5000 - Letter
+5100 - Letter
+5200 - Letter
+5300 - Artifact
+5400 - Letter
+5500 - ?
+5600 - Dolly
+5700 - Water Stone
+5800 - Magical Bean
+5900 - Fertile Soil
+5A00 - Miracle Water
+5B00 - Volcano Vase
+5C00 - Tape
+5D00 - Sugar
+5E00 - Salt
+5F00 - Egg
+6000 - Cream
+6100 - Strawberry
+6200 - Buter
+6300 - Cleanser
+6400 - Water
+6500 - Flour
+6600 - Milk
+6700 - Lyrics
+6800 - Melody
+6900 - Mailbag
+6A00 - Castle Key
+6B00 - Odd Key
+6C00 - Star Stone
+6D00 - Sneak Parasol
+6E00 - Koopa Legends
+6F00 - Autograph
+7000 - Empty Wallet
+7100 - Autograph
+7200 - ?
+7300 - Old Photo
+7400 - Glasses
+7500 - ?
+7600 - Package
+7700 - Red Jar
+7800 - Castle Key
+7900 - Warehouse Key
+7A00 - Prison Key
+7B00 - Silver Credit
+7C00 - Gold Credit
+7D00 - Prison Key
+7E00 - Prison Key
+7F00 - Prison Key
+8000 - Fire Flower
+8100 - Snowman Doll
+8200 - Thunder Rage
+8300 - Shooting Star
+8400 - Thunder Bolt
+8500 - Pebble
+8600 - Dusty Hammer
+8700 - ?
+8800 - Stone Cap
+8900 - Tasty Tonic
+8A00 - Mushroom
+8B00 - Volt Shroom
+8C00 - Super Shroom
+8D00 - Dried Shroom
+8E00 - Ultra Shroom
+8F00 - Sleep Sheep
+9000 - POW Block
+9100 - ?
+9200 - Stop Watch
+9300 - Whacka's Bump
+9400 - Apple
+9500 - Life Shroom
+9600 - Mystery?
+9700 - Repel Gel
+9800 - Fright Jar
+9900 - ?
+9A00 - Dizzy Dial
+9B00 - Super Soda
+9C00 - Lemon
+9D00 - Lime
+9E00 - Blue Berry
+9F00 - Red Berry
+A000 - Yellow Berry
+A100 - Bubble Berry
+A200 - Jammin' Jelly
+A300 - Maple Syrup
+A400 - Honey Syrup
+A500 - Goomnut
+A600 - Koopa Leaf
+A700 - Dried Pasta
+A800 - Dried Fruit
+A900 - Strange Leaf
+AA00 - Cake Mix
+AB00 - Egg
+AC00 - Coconut
+AD00 - Melon
+AE00 - Stinky Herb
+AF00 - Iced Potato
+B000 - Spicy Soup
+B100 - Apple Pie
+B200 - Honey Ultra
+B300 - Maple Ultra
+B400 - Jelly Ultra
+B500 - KooPasta
+B600 - Fried Shroom
+B700 - Shroom Cake
+B800 - Shroom Steak
+B900 - Hot Shroom
+BA00 - Sweet Shroom
+BB00 - Yummy Meal
+BC00 - Healthy Juice
+BD00 - Bland Meal
+BE00 - Deluxe Feast
+BF00 - Special Shake
+C000 - Big Cookie
+C100 - Cake
+C200 - Mistake
+C300 - Koopa Tea
+C400 - Honey Super
+C500 - Maple Super
+C600 - Jelly Super
+C700 - Spaghetti
+C800 - Egg Missile
+C900 - Fried Egg
+CA00 - Honey Shroom
+CB00 - Honey Candy
+CC00 - Electro Pop
+CD00 - Fire Pop
+CE00 - Lime Candy
+CF00 - Coco Pop
+D000 - Lemon Candy
+D100 - Jelly Pop
+D200 - Strange Cake
+D300 - Kooky Cookie
+D400 - Frozen Fries
+D500 - Potato Salad
+D600 - Nutty Cake
+D700 - Maple Shroom
+D800 - Boiled Egg
+D900 - Yoshi Cookie
+DA00 - Jelly Shroom
+DB00 - Jelly Shroom
+DC00 - Jelly Shroom
+DD00 - Jelly Shroom
+DE00 - Jelly Shroom
+DF00 - Jelly Shroom
+E000 - Spin Smash
+E100 - Multibounce
+E200 - Power Plus
+E300 - Dodge Master
+E400 - Power Bounce
+E500 - Spike Shield
+E600 - First Attack
+E700 - HP Plus
+E800 - Quake Hammer
+E900 - Double Dip
+EA00 - ?
+EB00 - Sleep Stomp
+EC00 - Fire Shield
+ED00 - Quick Change
+EE00 - D-Down Pound
+EF00 - Dizzy Stomp
+F000 - ?
+F100 - Pretty Lucky
+F200 - Feeling Fine
+F300 - Attack FX A
+F400 - All Or Nothing
+F500 - HP Drain
+F600 - ?
+F700 - Slow Go
+F800 - FP Plus
+F900 - Mega Rush
+FA00 - Ice Power
+FB00 - Defend Plus
+FC00 - Pay-Off
+FD00 - Money Money
+FE00 - Chill Out
+FF00 - Happy Heart
+0001 - Zap Tap
+0101 - ?
+0201 - Right On!
+0301 - Runaway Pay
+0401 - Refund
+0501 - Flower Saver
+0601 - Triple Dip
+0701 - Hammer Throw
+0801 - Mega Quake
+0901 - Smash Charge
+0A01 - Jump Charge
+0B01 - S. Smash Chg.
+0C01 - S. Jump Chg.
+0D01 - Power Rush
+0E01 - ?
+0F01 - ?
+1001 - ?
+1101 - Last Stand
+1201 - Close Call
+1301 - P-Up, D-Down
+1401 - Lucky Day
+1501 - ?
+1601 - P-Down, D-Up
+1701 - Power Quake
+1801 - ?
+1901 - ?
+1A01 - Heart Finder
+1B01 - Flower Finder
+1C01 - Spin Attack
+1D01 - Dizzy Attack
+1E01 - I Spy
+1F01 - Speedy Spin
+2001 - Bump Attack
+2101 - Power Jump
+2201 - ?
+2301 - Mega Jump
+2401 - Power Smash
+2501 - ?
+2601 - Mega Smash
+2701 - Power Smash
+2801 - Power Smash
+2901 - Deep Focus
+2A01 - ?
+2B01 - Shrink Smash
+2C01 - ?
+2D01 - ?
+2E01 - D-Down Jump
+2F01 - Shrink Stomp
+3001 - Damage Dodge
+3101 - ?
+3201 - Deep Focus
+3301 - Deep Focus
+3401 - HP Plus
+3501 - FP Plus
+3601 - Happy Heart
+3701 - Happy Heart
+3801 - Flower Saver
+3901 - Flower Saver
+3A01 - Damage Dodge
+3B01 - Damage Dodge
+3C01 - Power Plus
+3D01 - Power Plus
+3E01 - Defend Plus
+3F01 - Defend Plus
+4001 - Happy Flower
+4101 - Happy Flower
+4201 - Happy Flower
+4301 - Group Focus
+4401 - Peekaboo
+4501 - Attack FX D
+4601 - Attack FX B
+4701 - Attack FX E
+4801 - Attack FX C
+4901 - Attack FX F
+4A01 - HP Plus
+4B01 - HP Plus
+4C01 - HP Plus
+4D01 - FP Plus
+4E01 - FP Plus
+4F01 - FP Plus
+5001 - ?
+5101 - Attack FX F
+5201 - Attack FX F
+5301 - Attack FX F
+5401 - ?
+5501 - ?
+5601 - ?
+5701 - ?
+5801 - ?
+5901 - ?
+5A01 - ?
+5B01 - ?
+5C01 - Star Piece
+]

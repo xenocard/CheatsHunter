@@ -1,0 +1,50 @@
+Note:
+Health / Instant Kill do not works in mini game
+but money works
+
+Known issue
+Inf. HP should be off in some stage (for opening a kind of door)
+Inf Health may cause the snake and bugs invincible, and eggs become unbreakable that block the path, you should restart the game or die once, without enable inf. health
+
+
+the master code:
+it may become a cheat code template for all games developed by MOAI engine / GameMaker / Yoyo Games etc.
+
+All variables in this game are double float, or a masked U64 integer (e.g. 99 becomes FFF9000000000063 )
+
+And the setter / getter / arithmetic operator etc all perform in the same common functions, it is difficult to find out where access these common function
+
+
+I can only hack that by compare the variable key names
+
+Luckily there is a masked pointer follows the variables, I can distinguish the keyname at there.
+
+I give an example, Money, 9999 can be search with 0x40C3878000000000
+then there should be a masked pointer follows, e.g. 0xFFFD801A8EDA2940
+(FFFD80 is a signal show that it is a pointer, 1A8EDA2940 is stand for a pointer address)
+
+
+
+    is it Possible to Create invincible cheat be made
+    ill add a button trigger for HP cheat to not die from boss hits and release Trigger to continue fight when he doesn't attack
+
+    Thank you for the Info
+    Take your Time, i am more interested to see how you develop the cheats for it
+
+button can set easily, but it will be difficult to manipulate
+e.g.
+[Infinite Health (hold ZR)]
+040E0000 0095AFFC 00000000
+80000200
+040E0000 0095AFFC 00000001
+20000000
+
+if you reverse the above code, i.e. default invincible, the same error may occur. However, everything need to test (may be a few days later, I miss too many game update)
+[Infinite Health (hold ZR to off)]
+040E0000 0095AFFC 00000001
+80000200
+040E0000 0095AFFC 00000000
+20000000
+
+notes by test
+Something in the new codes stops you from receiving new items like pixball cards and even the weapons looks like you pick it up but item don't increase or show at all like you recieve it. old codes work though "these"
