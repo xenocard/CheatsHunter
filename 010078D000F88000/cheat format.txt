@@ -1,0 +1,197 @@
+import sys
+sys.path.insert(1,'.\__python__')
+
+from clearCache import clearCache
+clearCache('cheatLib')
+from cheatLib import *
+cls()
+
+
+010078D000F88000
+
+import sys
+sys.path.insert(1,'..\__python__')
+from cheatLib import *
+
+################################ START ######################################
+
+# Game Name in English, and then secondary Language, don't ask for emulator
+Init('DRAGON BALL XENOVERSE 2')
+
+AddCheat('01# Inf Ki')
+CodeCave('01 78 21 1E 08 20 20 1E E9 03 27 1E', (
+'ldr w8, [x19, #0x40]',
+'cbnz w8, #0xc',
+'fmaxnm s0, s0, s1',
+'str s0, [x19, #0x108]',
+'fminnm s1, s0, s1',
+'RET'
+))
+
+AddCheat('02# Inf Health')
+CodeCave('00 18 21 1E ? ? ? ? 41 ? ? BD', (
+'fdiv s0, s0, s1',
+'ldr w10, [x19, #0x40]',
+'cbnz w10, #0xc',
+'fmov s0, s1',
+'str s0, [x19, #0xfc]',
+'RET'
+))
+
+AddCheat('03# Inf Stamina')
+CodeCave('60 6A 01 BD 68 B2 61 B9', (
+'ldr s8, [x20, #0x16c]',
+'ldr w8, [x20, #0x40]',
+'cbnz w8, #0xc',
+'fmov s9, s8',
+'str s9, [x20, #0x168]',
+'RET'
+))
+
+AddCheat('04# Damage mutiplier')
+CodeCave('E0 09 2E 1E', (
+'fmul s0, s15, s14',
+'ldr w8, [x20, #0x40]',
+'cbz w8, #0xc',
+'fmov s1, #5.00000000',
+'fmul s0, s0, s1',
+'RET'
+))
+
+savedata=[GetQword(GetADRP(AOB('08 ? ? F9 F3 03 00 AA 00 01 40 F9 15 00 80 12')))]
+# savedata=0x22BF6E0
+# slot = [0x22BF6E0] + [0x4C]
+# [0x22BF6E0] + [ 0xE790 * slot + 0xDF88 + 0xF4 + 0x68 * idx + 0x4]
+addr=AOB('08 ? ? F9 F3 03 00 AA 00 01 40 F9 15 00 80 12')
+save=[GetQword(GetADRP(addr))]
+slotOffset=idc.get_operand_value(AOB2(AOB2(addr,0x18,'? ? ? ? E1 03 00 2A'),0),1)+8
+addr2=AOB2(addr,0x18,'? ? ? 52 28 4C 28 9B')
+offset1=idc.get_operand_value(addr2,1)
+offset2=idc.get_operand_value(addr2+8,1)+0xF8
+
+AddCheat('05# Preset 1')
+AddCheatCode(
+    PointerCodeHeader(savedata,'D') +
+    PointerCodeAddOffset([slotOffset],'D',4) +
+    PointerCodeArithmetic('and','D','D',0xFFFFFFFF) +
+    PointerCodeArithmetic('*','D','D',offset1,4) +
+    PointerCodeHeader(savedata,'F') +
+    PointerCodeArithmetic('+','F','F',offset2+0x68*1) +
+    PointerCodeWrite(8, 0x13C, 0x13C, 'F', True, True) +
+    PointerCodeWrite(8, 0x13C, 0x13C, 'F', True, True) +
+    PointerCodeWrite(8, 0x7E, 0x98, 'F', True, True) +
+    PointerCodeWrite(4, 0x0FFFFFFF, None, 'F', True, False)
+    )
+
+AddCheat('06# Preset 2')
+AddCheatCode(
+    PointerCodeHeader(savedata,'D') +
+    PointerCodeAddOffset([slotOffset],'D',4) +
+    PointerCodeArithmetic('and','D','D',0xFFFFFFFF) +
+    PointerCodeArithmetic('*','D','D',offset1) +
+    PointerCodeHeader(savedata,'F') +
+    PointerCodeArithmetic('+','F','F',offset2+0x68*2) +
+    PointerCodeWrite(8, 0x132, 0x132, 'F', True, True) +
+    PointerCodeWrite(8, 0x132, 0x132, 'F', True, True) +
+    PointerCodeWrite(8, 0x81, 0x98, 'F', True, True) +
+    PointerCodeWrite(4, 0x0FFFFFFF, None, 'F', True, False)
+    )
+
+AddCheat('06# Preset 3')
+AddCheatCode(
+    PointerCodeHeader(savedata,'D') +
+    PointerCodeAddOffset([slotOffset],'D',4) +
+    PointerCodeArithmetic('and','D','D',0xFFFFFFFF) +
+    PointerCodeArithmetic('*','D','D',offset1) +
+    PointerCodeHeader(savedata,'F') +
+    PointerCodeArithmetic('+','F','F',offset2+0x68*3) +
+    PointerCodeWrite(8, 0x131, 0x131, 'F', True, True) +
+    PointerCodeWrite(8, 0x131, 0x131, 'F', True, True) +
+    PointerCodeWrite(8, 0x82, 0x98, 'F', True, True) +
+    PointerCodeWrite(4, 0x0FFFFFFF, None, 'F', True, False)
+    )
+
+AddCheat('08# Max Zeni and TP')
+Hack(AOB2('? ? ? ? 00 10 2E 1E 60 02 02 B9',0,'61 00 00 54'), 'MOV W0, #0xC9FF')
+Hack(AOB2('? ? ? ? 00 10 2E 1E 60 02 02 B9',0,'00 01 00 4A'), 'MOVK W0, #0x3B9A,LSL#16')
+Hack(AOB2('? ? ? ? 00 10 2E 1E 60 02 02 B9',1,'00 01 00 4A'),'#0x3B9A,LSL#16')
+Hack('89 01 00 4A', 'MOV W0, #0xC9FF')
+Hack('00 01 09 0B FD 7B C1 A8 C0 03 5F D6 ? ? ? ?', 'MOVK W0, #0x3B9A,LSL#16')
+
+AddCheat('09# Level 99')
+Hack(AOB2('? ? ? ? 61 B2 40 B9 60 B6 00 B9',0,'00 01 00 4A'), 'MOV W0,#99')
+
+AddCheat('10# 100,000,000 Total EXP')
+Hack(AOB2('? ? ? ? C8 02 00 4B E0 03 13 AA',0,'61 00 00 54'), 'MOV W0, #0xE100')
+Hack(AOB2('? ? ? ? C8 02 00 4B E0 03 13 AA',0,'00 01 00 4A'), 'MOVK W0, #0x5F5,LSL#16')
+
+AddCheat('11# 9,999 Attribute Points')
+Hack(AOB2('? ? ? ? 60 D2 01 B9 E0 03 14 AA',0,'00 01 00 4A'), 'MOV W0,#9999')
+
+
+AddCheat('12# 100 Max All Attributes')
+Hack(AOB2('? ? ? ? 60 D6 01 B9 E0 03 14 AA',0,'00 01 00 4A'), 'MOV W0,#127')
+Hack(AOB2('? ? ? ? 60 DA 01 B9 E0 03 14 AA',0,'00 01 00 4A'), 'MOV W0,#127')
+Hack(AOB2('? ? ? ? 60 DE 01 B9 E0 03 14 AA',0,'00 01 00 4A'), 'MOV W0,#127')
+Hack(AOB2('? ? ? ? 60 E2 01 B9 E0 03 14 AA',0,'00 01 00 4A'), 'MOV W0,#127')
+Hack(AOB2('? ? ? ? 60 E6 01 B9 E0 03 14 AA',0,'00 01 00 4A'), 'MOV W0,#127')
+Hack(AOB2('? ? ? ? 60 EA 01 B9 FD 7B 41 A9 F4 4F C2 A8',0,'00 01 00 4A'), 'MOV W0,#127')
+
+
+AddCheat('13# Instructors Friendship Max after talk')
+Hack('08 B1 89 1A E0 03 15 AA', 'MOV W8, W9')
+
+
+AddCheat('14# Movement Speed 4x (Hold ZL)')
+Hack('A1 02 40 BD 83 3A 47 B9', 'FMOV S1, #0.125', useButton='ZL')
+
+################################# END #######################################
+
+HackComplete()
+
+GetAOB()
+
+CodeCave('28 CF 00 B9 61 01 00 54', (
+'LDR W8, [X25, #0xD0]',
+'STR W8, [X25, #0xCC]',
+'RET'
+))
+
+Hack('00 28 21 1E 60 2E 00 BD ? ? ? ? FC 23 40 F9', 'fsub s0, s0, s1', useButton='L')
+
+useButton=MixButtons(['L3','R3']))
+
+AddCheat('05# Inf Durability')
+cheatAddr1=AOB('01 09 40 B9 A2 63 00 D1 E0 03 1C AA 63 C0 98 52')
+cheatAddr2=AOB('01 09 40 B9 A2 63 00 D1 E0 03 1C AA C3 B7 9D 52')
+CodeCave(cheatAddr1,(
+'ldr w1, [x8, #8]',
+'mov w1, #0x270f',
+'str w1, [x8, #8]',
+'RET'
+))
+Hack(cheatAddr2,'BL %d'%(GetCodeK()-cheatAddr2))
+
+'RET',
+Value2DWord(999999)
+))
+
+AddCheat('02# Inf Health')
+CodeCave('08 00 40 F9 08 09 40 F9 00 01 3F D6 60 1E 4C F9',)
+CodeCave(cheatAddr,(
+'ldr w8, [x0, #0x18]',
+'cbz w8, +8',
+'str w8, [x0, #8]',
+'ldr x8, [x0]',
+'B %d-{here}'%(cheatAddr+4)
+), use_BL=False)
+
+AddCheat('01# Moonjump (Hold X+A)')
+CodeCave('60 86 4D 2D 20 20 20 1E',)
+AddCheatCode(ButtonCode(5,RestoreCode(4,cheatAddr,)))
+CodeCave(cheatAddr,(
+'fmov s4, #2.00000000',
+'str s4, [x19, #0xb8]',
+'ldp s0, s1, [x19, #0x6c]',
+'RET'
+))
