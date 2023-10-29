@@ -1,0 +1,4 @@
+[invincible to enemies/not traps (ASM) ★]
+04000000 00F2EADC 52800049
+04000000 00F2F23C 52800048
+[Gamerjin]
