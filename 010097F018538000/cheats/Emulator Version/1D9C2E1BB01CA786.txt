@@ -1,0 +1,83 @@
+{Dave The Diver v1.0.0.377 TIDE：010097F018538000 BID：1D9C2E1BB01CA786 by Kaito B}
+
+[Invincible]
+040E0000 0428D9D8 D503201F
+040E0000 0428D9E4 52800028
+
+[Unlimited endurance]
+040E0000 04754F90 BD004262
+
+[Money does not decrease]
+040E0000 041982B8 4B1F03E2
+040E0000 048A0578 4B1F03E2
+040E0000 04FDA310 4B1F03E2
+
+[No less mustard]
+040E0000 042BA578 2A1F03E2
+040E0000 049CD540 4B1F03E2
+
+[Ingredients will not be reduced]
+040E0000 049CD540 4B1F0109
+
+[Bullets are not reduced]
+040E0000 049CD540 51000101
+
+[No increase in weight]
+040E0000 04FEB6D4 1E2203E1
+
+[Can be stripped 3 times]
+040E0000 0461C514 52800068
+
+[The fire of the craftsman remains undiminished]
+040E0000 042E067C 4B1F03E2
+
+[Firearm materials will not be reduced]
+040E0000 0419816C AA1F03E2
+
+[Movement speed 2x]
+040E0000 04755684 14000008
+040E0000 047556A4 1E209002
+080E0000 047556A8 D65F03C0 1E220800
+
+[Swimming speed 3x]
+080E0000 053EB93C 1E211002 AA1303E0
+080E0000 053EB944 D65F03C0 1E22096B
+040E0000 042835DC 9445A0D8
+
+[Cooking speed 4x]
+040E0000 0424D9EC 1E221001
+
+[Upgrade cooking without ingredients]
+040E0000 042E0B54 2A1F03E2
+040E0000 04E5D588 D503201F
+
+[selling price of ingredients 4x]
+080E0000 044A87D8 D65F03C0 0B000BE0
+040E0000 044A8814 17FFFFF1
+
+[Hypnosis bomb takes effect immediately]
+040E0000 047688CC 1E2703E9
+
+[Harpoon catch rate 100%]
+040E0000 04E24760 B9007A7F
+
+[No oxygen consumed during diving]
+040E0000 04272454 1E2703E1
+
+[Unlimited diving consumption items]
+040E0000 049B7F98 4B1F0108
+
+[Unlimited battery for auxiliary equipment]
+040E0000 049B9570 1E204100
+
+[Quick accumulation in fishing key slot]
+040E0000 04E42110 BD403261
+
+[Ecological tasks do not consume props]
+040E0000 04BB46C0 4B1F03E2
+
+[Extra materials for marine creatures must be dropped]
+040E0000 04159314 D503201F
+
+[Melee weapon abnormal status must be triggered]
+040E0000 04B11278 D503201F
