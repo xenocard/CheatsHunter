@@ -8,6 +8,7 @@
 [№ 1. Invulnerable]
 480D0000 00000000 000000BE
 620F01D0 00000000 00000101
+[doesn't work on aura damage such as Hellfire Scorpions' fire aura or Titan Baraka]
 
 [№ 2. Infinite Fight Timer]
 480D0000 00000000 000000C8
@@ -18,8 +19,6 @@
 620F01D0 00000000 00000101
 
 [№ 4. Unlimited Talisman Charges]
-480D0000 00000000 000000CA
-620F01D0 00000000 00000101
 
 [№ 5. Unlimited Krushing Blows]
 480D0000 00000000 000000A2
@@ -42,8 +41,7 @@
 620F01D0 00000000 00000101
 
 [This set of cheats is created by Eiffel2018, enjoy!]
-
-[This set of cheats is created by Eiffel2018, enjoy!]
+00000000 00000000 00000000
 
 [Patjenova cheats]
 20000000
