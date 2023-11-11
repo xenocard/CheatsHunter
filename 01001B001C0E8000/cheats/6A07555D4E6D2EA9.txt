@@ -1,0 +1,29 @@
+[Ebenezer and The Invisible World v1.0.0 TID: 01001B001C0E8000
+BID: 6A07555D4E6D2EA9]
+
+[HP  No Decrease On]
+04000000 01ffbc70 d503201f
+
+[MP No Decrease On]
+04000000 020104a8 d503201f
+
+[Infinite Double Jump On]
+04000000 035b2624 3902f51f
+
+[Money 98304 on get]
+04000000 02001660 321107e8
+
+[HP No Decrease Off]
+04000000 01ffbc70 B9001AC8 
+
+[MP No Decrease Off]
+04000000 020104a8 B9002008 
+
+[Infinite Double Jump Off]
+04000000 035b2624 3902f509
+
+[Money 98304 on get Off]
+04000000 02001660 0b130108
+
+[Optantic]
+20000000
