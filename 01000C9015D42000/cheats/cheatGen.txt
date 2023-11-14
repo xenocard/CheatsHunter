@@ -1,0 +1,164 @@
+AddCheat('Currency Red Blue Armor Light 9999')
+blAddr=AOB2('96 0A 40 F9 C0 01 00 36',0x34)
+adrpAddr=GetADRP(AOB('96 0A 40 F9 C0 01 00 36')+0x24)
+CodeK=GetCodeK()
+CodeCave(AOB('80 0A 40 F9 C0 02 00 B4 ? ? ? ? E1 03 13 2A 08 ? ? F9')+0x24,(
+'stp x29, x30, [sp,#-0x10]!',
+'mov w1, w19',
+'mov w2, #9999',
+'ADRP X3, #%d'%(((adrpAddr-CodeK)&0xfffffffffffff000)+0x1000),
+'LDR X3, [x3, #0xD08]',
+'LDR X3, [x3]',
+'bl %d-{here}'%blAddr,
+'LDR X0, [X20,#0x10]',
+'ldp x29, x30, [sp],#0x10',
+'ret'
+))
+
+addr=AOB('F5 03 02 2A C8 ? ? 39 F3 03 01 2A F4 03 00 AA E8 01 00 37')
+AddCheat('Currency Red Blue Armor Light x2')
+Hack(addr, 'add w21, wzr, w2, lsl#1')
+AddCheat('Currency Red Blue Armor Light x3')
+Hack(addr, 'add w21, w2, w2, lsl#1')
+AddCheat('Currency Red Blue Armor Light x4')
+Hack(addr, 'add w21, wzr, w2, lsl#2')
+AddCheat('Currency Red Blue Armor Light x5')
+Hack(addr, 'add w21, w2, w2, lsl#2')
+AddCheat('Currency Red Blue Armor Light x8')
+Hack(addr, 'add w21, wzr, w2, lsl#3')
+AddCheat('Currency Red Blue Armor Light x16')
+Hack(addr, 'add w21, wzr, w2, lsl#4')
+AddCheat('Currency Red Blue Armor Light x128')
+Hack(addr, 'add w21, wzr, w2, lsl#7')
+AddCheat('Currency Red Blue Armor Light x1024')
+Hack(addr, 'add w21, wzr, w2, lsl#10')
+
+AddCheat('invincible')
+Hack(AOB('FD 7B BE A9 F3 0B 00 F9 FD 03 00 91 F3 03 00 AA E0 03 1F AA ? ? ? ? 68 1A 40 F9')+0x3c, 'mov w0, #1')
+
+AddCheat('one hit kill')
+Hack('20 38 20 1E 08 20 20 1E 60 E2 00 BD', 'fsub s0, s1, s1')
+
+addr=AOB('08 00 78 1E EA 0B 40 FD')
+CodeK=GetCodeK()
+for rate in (2,3,4,5,10,100):
+SetCodeK(CodeK)
+AddCheat('damage x%d'%rate)
+CodeCave(addr, (
+'fcvtzs w8, d0',
+'mov w7, #%d'%rate,
+'mul w8, w8, w7',
+'ret'
+))
+
+AddCheat('MP Max')
+Hack('80 12 00 B4 28 45 40 BD', 'mov x29, x9')
+Hack('01 58 21 1E 08 20 20 1E 00 E4 00 2F 2A 5C 20 1E 00 11 00 B4', 'str s9, [x29,#0x44]')
+Hack('2A 5C 20 1E 00 11 00 B4', 'fmov s10, s1')
+
+AddCheat('infinite jump')
+Hack('75 00 00 36 9F BA 01 B9', 'nop')
+
+addr=AOB('6A 8A 40 BD E0 07 01 2D')
+CodeK=GetCodeK()
+for rate in (1.5, 2.0, 2.5, 3.0, 4.0):
+SetCodeK(CodeK)
+AddCheat('move speed x{:.1f}'.format(rate))
+CodeCave(addr, (
+'ldr s10, [x19,#0x88]',
+'fmov s14, #{:.1f}'.format(rate),
+'fmul s10, s10, s14',
+'ret'
+))
+
+AddCheat('No charge required to use Aura Blast')
+Hack('0B 09 00 54 C8 02 40 39','nop')
+
+PlayerController_TypeInfo=[GetQword(GetADRP(AOB('08 ? ? F9 08 01 40 F9 08 5D 40 F9 14 01 40 F9 F4 65 00 B4')))]
+PlayerController=PlayerController_TypeInfo+[0xb8, 0]
+EuropaController=PlayerController+[0x18]
+CurrencyInventory = EuropaController+[0x70]
+_currencyWallet=CurrencyInventory+[0x10]
+currency=_currencyWallet+[0x18, 0x2c]
+RedNote=_currencyWallet+[0x18, 0x3c]
+BlueNote=_currencyWallet+[0x18, 0x4c]
+ArmorPiece=_currencyWallet+[0x18, 0x5c]
+LightPiece=_currencyWallet+[0x18, 0x6c]
+
+for idx, value in {'1':9999, '2':999, '3':999, '4':999, '5':999}.items():
+AddCheat('currency'+idx)
+PointerHack(_currencyWallet+[0x18, 0x1c+0x10*int(idx)],value)
+
+ProgressionData=EuropaController+[0x40]
+earth=ProgressionData+[0x20]
+electric=ProgressionData+[0x28]
+fire=ProgressionData+[0x30]
+water=ProgressionData+[0x38]
+light=ProgressionData+[0x40]
+
+AddCheat('earth armor Unlocked')
+PointerHack(earth+[0x10],1,length=1)
+AddCheat('earth armor Upgraded')
+PointerHack(earth+[0x11],1,length=1)
+AddCheat('earth abilityUnlocked')
+PointerHack(earth+[0x12],1,length=1)
+
+AddCheat('electric armor Unlocked')
+PointerHack(electric+[0x10],1,length=1)
+AddCheat('electric armor Upgraded')
+PointerHack(electric+[0x11],1,length=1)
+AddCheat('electric abilityUnlocked')
+PointerHack(electric+[0x12],1,length=1)
+
+AddCheat('fire armor Unlocked')
+PointerHack(fire+[0x10],1,length=1)
+AddCheat('fire armor Upgraded')
+PointerHack(fire+[0x11],1,length=1)
+AddCheat('fire abilityUnlocked')
+PointerHack(fire+[0x12],1,length=1)
+
+AddCheat('water armor Unlocked')
+PointerHack(water+[0x10],1,length=1)
+AddCheat('water armor Upgraded')
+PointerHack(water+[0x11],1,length=1)
+AddCheat('water abilityUnlocked')
+PointerHack(water+[0x12],1,length=1)
+
+AddCheat('light armor Unlocked')
+PointerHack(light+[0x10],1,length=1)
+AddCheat('light armor Upgraded')
+PointerHack(light+[0x11],1,length=1)
+AddCheat('light abilityUnlocked')
+PointerHack(light+[0x12],1,length=1)
+
+chargeAttack=ProgressionData+[0x48]
+diveKick=ProgressionData+[0x49]
+doubleJump=ProgressionData+[0x4A]
+auraBlast=ProgressionData+[0x4B]
+lullaby=ProgressionData+[0x54]
+quickHeal=ProgressionData+[0x55]
+apinoUppercut=ProgressionData+[0x56]
+apinoBoomerangShot=ProgressionData+[0x57]
+apinoUpgradedShot=ProgressionData+[0x58]
+apinoWallCrawlShot=ProgressionData+[0x59]
+
+AddCheat('chargeAttack unlock')
+PointerHack(chargeAttack,1,length=1)
+AddCheat('diveKick unlock')
+PointerHack(diveKick,1,length=1)
+AddCheat('doubleJump unlock')
+PointerHack(doubleJump,1,length=1)
+AddCheat('auraBlast unlock')
+PointerHack(auraBlast,1,length=1)
+AddCheat('lullaby unlock')
+PointerHack(lullaby,1,length=1)
+AddCheat('quickHeal unlock')
+PointerHack(quickHeal,1,length=1)
+AddCheat('apinoUppercut unlock')
+PointerHack(apinoUppercut,1,length=1)
+AddCheat('apinoBoomerangShot unlock')
+PointerHack(apinoBoomerangShot,1,length=1)
+AddCheat('apinoUpgradedShot unlock')
+PointerHack(apinoUpgradedShot,1,length=1)
+AddCheat('apinoWallCrawlShot unlock')
+PointerHack(apinoWallCrawlShot,1,length=1)
