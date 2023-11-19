@@ -1,5 +1,5 @@
 # CheatsHunter
-Curated Merged Cheat Archive from : 
+Curated Cheat Archive Credits: 
 (TomSwitch - https://github.com/tomvita/MyNXCheats/tree/main]
 (Khuong - https://github.com/bad1dea/NXCheats/tree/main)
 Patjenova
