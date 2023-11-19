@@ -5,7 +5,7 @@ Patjenova
 Eiffel2018
 Crazy P
 Gamerjin
-Khuong (https://github.com/bad1dea/NXCheats/tree/main)
+(Khuong - https://github.com/bad1dea/NXCheats/tree/main)
 NeoGranzon
 JHmiller (https://gbatemp.net/members/jhmiller.268120/#recent-content)
 Optantic (https://www.youtube.com/@optantic/videos)
