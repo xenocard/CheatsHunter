@@ -144,6 +144,7 @@
 [∞ Talent Points ★]
 040A0000 04250F18 52800C73
 [Disable, Use Resore code when done]
+[if you have zero points, use talent reset potion, Buy Recipe first]
 
 [● Battle ●]
 20000000
@@ -389,7 +390,7 @@
 
 [♥ This set of cheats is created by ♥]
 00000000 00000000 00000000
-[Patjenova - khuong ツ - DeadQool (EXP), enjoy!]
+[Patjenova - khuong ツ - DeadQool - Kindren, enjoy!]
 20000000
 
 [★ Duplicate - Unused Cheats ★]
