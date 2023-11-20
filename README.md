@@ -31,6 +31,6 @@ The Gihub is a Repo made to Download cheats Directly from [**Breeze**](https://g
 we made it Easy for everyone to access cheats Not found in Public sites, Learn the Difference Between a Private and a Public Share, what we shared is not intended to be Reposted to Public Websites/Forums, if you value the Free Cheats shared here, Don't Shit on the server or we stop sharing in Open Channels
 
 [**Youtube Channel**](https://www.youtube.com/channel/UCbpTMSz6-qirhR5GRGgv1mQ) \
-[**X (Twitter)** Page**](https://twitter.com/CheatsHunter)
+[**X (Twitter)**](https://twitter.com/CheatsHunter)
 
 
