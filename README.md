@@ -18,7 +18,7 @@
 [**Lulu5431**](https://www.tekqart.com/home.php?mod=space&uid=2518151&do=thread&type=thread&view=me&from=space) \
 [**a7251835**](https://www.tekqart.com/home.php?mod=space&uid=2256908&do=thread&type=thread&view=me&from=space) \
 [**Shaohua Baishou (韶华白首)**](https://www.tekqart.com/home.php?mod=space&uid=2668346&do=thread&type=thread&view=me&from=space) \
-[w55212235333](https://www.tekqart.com/home.php?mod=space&uid=2754643&do=thread&type=thread&view=me&from=space)(Retired) \
+[w55212235333](https://www.tekqart.com/home.php?mod=space&uid=2754643&do=thread&type=thread&view=me&from=space)(Retired)
 
 **and more**
 
