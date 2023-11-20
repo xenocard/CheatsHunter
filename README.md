@@ -2,11 +2,11 @@
 **Curated and Merged Cheat Archive Credits:**
 
 [**TomSwitch**](https://github.com/tomvita/MyNXCheats/tree/main) \
-[**Khuong**](https://github.com/bad1dea/NXCheats/tree/main) \
 [**Patjenova**]() \
 [**Eiffel2018**](https://www.tekqart.com/home.php?mod=space&uid=2551322&do=thread&type=thread&view=me&from=space) \
 [**Crazy P**](https://www.example.com) \
 [**Gamerjin**](https://www.example.com) \
+[**Khuong**](https://github.com/bad1dea/NXCheats/tree/main) \
 [**NeoGranzon**](https://www.example.com) \
 [**Nic87**](https://www.example.com) \
 [**DeadQool**](https://www.example.com) \
