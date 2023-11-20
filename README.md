@@ -10,11 +10,11 @@
 [**NeoGranzon**](https://www.example.com) \
 [**Nic87**](https://www.example.com) \
 [**DeadQool**](https://www.example.com) \
-[**ThorHammer**](https://www.example.com) \
-[**xTATU**)]()(Retired) \
-[**JHmiller**](https://www.404.com) \
+[**ThorHammer**](https://gbatemp.net/members/thorhammer.574890/) \
+[**xTATU**](https://gbatemp.net/members/xtatu.472418/)(Retired) \
+[**JHmiller**](https://gbatemp.net/members/jhmiller.268120/) \
 [**Hazerou**](https://www.404.com) \
-[**Optantic**](https://www.404.com](https://www.youtube.com/user/optantic/videos)) \
+[**Optantic**](https://www.youtube.com/user/optantic/videos) \
 [**Kaito B (怪盗B)**](https://www.tekqart.com/home.php?mod=space&uid=2230670&do=thread&type=thread&view=me&from=space) \
 [**Lulu5431**](https://www.tekqart.com/home.php?mod=space&uid=2518151&do=thread&type=thread&view=me&from=space) \
 [**a7251835**](https://www.tekqart.com/home.php?mod=space&uid=2256908&do=thread&type=thread&view=me&from=space) \
