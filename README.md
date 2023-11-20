@@ -8,6 +8,8 @@
 **Gamerjin** \
 **NeoGranzon** \
 **Nic87** \
+**DeadQool** \
+**ThorHammer** \
 **xTATU** \
 **JHmiller** - https://gbatemp.net/members/jhmiller.268120/#recent-content \
 **Optantic** - https://www.youtube.com/@optantic/videos \
