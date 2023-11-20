@@ -5,7 +5,7 @@
 [**TomSwitch**](https://github.com/tomvita/MyNXCheats/tree/main) \
 [**Khuong**](https://github.com/bad1dea/NXCheats/tree/main) \
 [**Patjenova**]() \
-[**Eiffel2018**](https://www.example.com](https://www.tekqart.com/home.php?mod=space&uid=2551322&do=thread&type=thread&view=me&from=space) \
+[**Eiffel2018**](https://www.tekqart.com/home.php?mod=space&uid=2551322&do=thread&type=thread&view=me&from=space) \
 [**Crazy P**](https://www.example.com) \
 [**Gamerjin**](https://www.example.com) \
 [**NeoGranzon**](https://www.example.com) \
