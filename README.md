@@ -1,10 +1,10 @@
 # CheatsHunter
 Curated Cheat Archive Credits:\
-(TomSwitch - https://github.com/tomvita/MyNXCheats/tree/main]\
-(Khuong - https://github.com/bad1dea/NXCheats/tree/main)\
-Patjenova
-Eiffel2018
-Crazy P
+(TomSwitch - https://github.com/tomvita/MyNXCheats/tree/main] \
+(Khuong - https://github.com/bad1dea/NXCheats/tree/main) \
+Patjenova \
+Eiffel2018 \
+Crazy P \
 Gamerjin
 NeoGranzon
 Nic87
