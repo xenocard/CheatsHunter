@@ -13,6 +13,7 @@
 [**ThorHammer**](https://www.example.com) \
 [**xTATU**)]()(Retired) \
 [**JHmiller**](https://www.404.com) \
+[**Hazerou**](https://www.404.com) \
 [**Optantic**](https://www.404.com](https://www.youtube.com/user/optantic/videos)) \
 [**Kaito B (怪盗B)**](https://www.tekqart.com/home.php?mod=space&uid=2230670&do=thread&type=thread&view=me&from=space) \
 [**Lulu5431**](https://www.tekqart.com/home.php?mod=space&uid=2518151&do=thread&type=thread&view=me&from=space) \
