@@ -21,7 +21,18 @@
  \
  \
 **and more**
-[![Patjenova]]([https://cdn.discordapp.com/attachments/840645753754877952/893550538724098098/Kaito_B.gif?ex=656a1849&is=6557a349&hm=45c1e90808f14ee3901a2c4cc1c94d993a2df0dc61946117ae8997a06961f356&])
+**TomSwitch**](https://github.com/tomvita/MyNXCheats/tree/main)
+[**Khuong**](https://github.com/bad1dea/NXCheats/tree/main)
+[**Optantic**](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
+[link name](https://www.example.com)
 
 
 
