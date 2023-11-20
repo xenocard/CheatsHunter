@@ -10,7 +10,7 @@
 **Nic87** \
 **DeadQool** \
 **ThorHammer** \
-**xTATU** \
+**xTATU** (Retired) \
 **JHmiller** - https://gbatemp.net/members/jhmiller.268120/#recent-content \
 **Optantic** - https://www.youtube.com/@optantic/videos \
 **Kaito B** - https://www.tekqart.com/home.php?mod=space&uid=2230670&do=thread&type=thread&view=me&from=space \
