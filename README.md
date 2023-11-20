@@ -23,3 +23,11 @@
 
 **and more**
 
+[**Cheats Hunter**  **Disocrd Invite Link**](https://discord.gg/DqUcuVBdah) \
+A Free Cheats Share Server, Welcome to Our Humble Server
+The Gihub is a Repo made to Download cheats Directly from Breeze app via its **Download Cheats from a URL** option
+
+**Summary**
+we made it Easy for everyone to access cheats Not found in Public sites, Learn the Difference Between a Private and a Public Share, what we shared is not intended to be Reposted to Public Websites/Forums, if you value the Free Cheats shared here, Don't Shit on the server or we stop sharing in Open Channels
+```
+
