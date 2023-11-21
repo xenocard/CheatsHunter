@@ -14,7 +14,7 @@
 [**xTATU**](https://gbatemp.net/members/xtatu.472418/)(Retired) \
 [**JHmiller**](https://gbatemp.net/members/jhmiller.268120/) \
 [**Hazerou**](https://www.404.com) \
-[**Nolberto82l**](https://www.example.com) \
+[**Nolberto82**](https://www.example.com) \
 [**Optantic**](https://www.youtube.com/user/optantic/videos) \
 [**Kaito B (怪盗B)**](https://www.tekqart.com/home.php?mod=space&uid=2230670&do=thread&type=thread&view=me&from=space) \
 [**Lulu5431**](https://www.tekqart.com/home.php?mod=space&uid=2518151&do=thread&type=thread&view=me&from=space) \
