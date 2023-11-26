@@ -1,0 +1,75 @@
+AddCheat('Money 9,999,999')
+CodeCave(AOB('E0 03 1F AA ? ? ? ? C0 03 00 B4 08 E0 40 F9')+0x20,(
+'ldr w10, [x8,#0x10]',
+'mov w11, #0x967F',
+'movk w11, #0x98, lsl#16',
+'eor w10, w10, w11',
+'str w10, [x8,#0x14]',
+'str w11, [x8,#0x1c]',
+'ldp x10, x11, [x8,#0x10]',
+'ret',
+))
+
+AddCheat('Infinitive Oxygen')
+Hack('E0 03 1F AA ? ? ? ? 60 96 00 BD F3 0F 40 F9', 'fmov s0, s2')
+Hack('21 29 28 1E E0 03 27 1E',(
+'fmov s0, wzr',
+'fmax s8, s0, s8',
+'fadd s1, s9, s8'
+))
+
+AddCheat('Maximum Stamina')
+Hack('E0 03 1F AA ? ? ? ? 08 20 20 1E 60 42 00 BD', 'fmov s0, s2')
+
+AddCheat('Ammo Full')
+Hack('01 05 00 51 E0 03 1F 2A E2 03 1F AA 61 66 00 B9', 'sub w1, w8, wzr')
+
+AddCheat('No weight limit')
+Hack(AOB2('01 00 80 12 E2 03 1F AA ? ? ? ? 08 00 00 12',8),('mov w0, wzr','ret'))
+
+AddCheat('Movement speed does not slow down')
+Hack('? ? ? ? 60 7E 40 F9 60 01 00 B4 E1 03 1F AA', 'fmov s0, #1.0')
+
+CodeK=GetCodeK()
+addr='00 08 21 1E F3 13 40 F9'
+for rate in (2.0, 3.0, 4.0, 5.0):
+SetCodeK(CodeK)
+AddCheat('Movement speed x{:.1f}'.format(rate))
+CodeCave(addr, (
+'fmul s0, s0, s1',
+'ldr s8, {end}-4',
+'fmul s0, s0, s8',
+'ret',
+Float2DWord(rate)
+))
+
+AddCheat('One hit kill while pressing zl')
+CodeK=RegCodeK()
+CodeCave('00 38 28 1E E0 03 13 AA 09 0D 41 F9',(
+'fsub s0, s0, s8',
+'ldr w9, {end}',
+'cbz w9, .+24',
+'fmov s1, #1.0',
+'tst w20, #1',
+'fccmp s8, s1, #8, eq',
+'b.mi .+8',
+'fmov s0, wzr',
+'ret'
+))
+Hack(CodeK, 1, useButton='zl')
+
+CodeK=GetCodeK()
+addr='00 1D A8 4E 08 10 00 BD'
+for rate in (2.0, 3.0, 4.0, 5.0, 10.0, 100.0):
+SetCodeK(CodeK)
+AddCheat('Damage x{:.1f}'.format(rate))
+CodeCave(addr, (
+'ldr s0, {end}-4',
+'fmul s8, s8, s0',
+'fmov s0, s8',
+'ret',
+Float2DWord(rate)
+))
+
+AddCheat('max drone')
+Hack('29 05 00 51 09 01 02 B9 01 03 40 F9','movz w9, #0x3')
