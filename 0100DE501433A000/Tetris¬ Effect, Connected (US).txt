@@ -1,0 +1,1 @@
+Note: Better use NOEXES to avoid game lag
