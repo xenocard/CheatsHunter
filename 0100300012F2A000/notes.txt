@@ -1,0 +1,9 @@
+The hack hook the code that reads the stats. Hold the activation key then move the cursor into the unit to hack it.
+
+Here is the no conditional key version for those who use emulator that don't support conditional key.
+
+    As with all ASM hack you need to use the off enable code to turn it off ( I heard that master code is not supported on emulator too, you have to turn it on manually, without the off code you are stuck with the hack with no ability to turn it off until you restart ). The off is embedded in the version with conditional key
+
+    turn on the hack say [hp10 fuel&ammo100]
+    move cursor into unit
+    turn off [hp10 fuel&ammo100]
