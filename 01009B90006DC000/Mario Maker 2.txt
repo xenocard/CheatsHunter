@@ -1,0 +1,5 @@
+Controls:
+ZL + Left = Fireflower
+ZL + Right = Style Specific Power-Up #1
+ZL + Up = Style Specific Power-Up #2
+ZL + Down = Mushroom (Hammer Suit for 3D World)
