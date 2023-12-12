@@ -1,0 +1,719 @@
+#----------------------------------- Salt and Sacrifice -----------------------------------
+AddCheat('Salt 999,999,999','ソルト999,999,999')
+CodeCave('3A 1D 40 F9 09 64 42 79',(
+'mov x26, #0xC9FF',
+'movk x26, #0x3B9A, lsl#16',
+'str x26, [x9,#0x38]',
+'ret',
+))
+
+AddCheat('Silver 999,999,999','銀999,999,999')
+CodeCave('36 41 40 B9',(
+'mov w22, #0xC9FF',
+'movk w22, #0x3B9A, lsl#16',
+'str w22, [x9,#0x40]',
+'ret',
+))
+
+AddCheat('Invincible','無敵')
+tgtAddr=AOB('E8 03 40 B9 00 01 00 12')+8
+CodeCave('14 11 40 F9 ? ? ? ? F4 03 1F AA',(
+'ldr x20, [x8,#0x20]',
+'ldr w7, [x20,#0xa0]',
+'tbnz w7, #0x1f, .+8',
+'ret',
+'mov w0, wzr',
+'b %d-{here}'%tgtAddr
+))
+
+AddCheat('No Damage','ダメージ受けない')
+CodeCave('20 39 28 1E 08 2D 40 F9',(
+'fsub s0, s9, s8',
+'ldr w7, [x19,#0xa0]',
+'cmp w7, wzr',
+'fcsel s0, s9, s0, ge',
+'ret',
+0
+))
+
+CodeK=GetCodeK()
+AddCheat('One hit kill while pressing L3','L3押下中ワンヒットキル')
+CodeCave('60 CE 00 BD 28 0A 00 B4',(
+'ldr w7, {end}-4',
+'cbz w7, .+20',
+'ldr w7, [x19,#0xa0]',
+'fmov s1, wzr',
+'cmp w7, wzr',
+'fcsel s0, s0, s1, ge',
+'str s0, [x19,#0xcc]',
+'ret',
+0
+))
+Hack(CodeK-4,1,showRestoreCode=False,useButton='l3')
+
+#addr=AOB('08 08 2B 1E 09 41 20 1E') # v2.0.0
+#CodeK=GetCodeK()
+#for rate in (1.5, 2.0, 3.0, 4.0, 5.0, 10.0, 100.0, 1000.0):
+# SetCodeK(CodeK)
+# AddCheat('ダメージ{:.1f}倍'.format(rate))
+# CodeCave(addr, (
+# 'fmul s8, s0, s11',
+# 'ldr w7, [x21,#0xa0]',
+# 'tbz w7, #0x1f, .+12',
+# 'ldr s9, {end}-4',
+# 'fmul s8, s8, s9',
+# 'ret',
+# Float2DWord(rate)
+# ))
+
+addr=AOB('08 08 2C 1E 09 41 20 1E')
+CodeK=GetCodeK()
+for rate in (1.5, 2.0, 3.0, 4.0, 5.0, 10.0, 100.0, 1000.0):
+SetCodeK(CodeK)
+AddCheat('Damage x{:.1f}'.format(rate), 'ダメージ{:.1f}倍'.format(rate))
+CodeCave(addr, (
+'fmul s8, s0, s12',
+'ldr w7, [x21,#0xa0]',
+'tbz w7, #0x1f, .+12',
+'ldr s9, {end}-4',
+'fmul s8, s8, s9',
+'ret',
+Float2DWord(rate)
+))
+
+AddCheat('Stamina Max','スタミナ最大')
+Hack('4D 00 00 54 60 D2 00 BD','nop')
+
+AddCheat('No reduction in the number of items (all items)','アイテム個数減らない（全アイテム対象）')
+Hack('F5 03 02 2A C8 ? ? 39 F3 03 01 2A F4 03 00 AA 48 02 00 37','mov w21, wzr')
+
+AddCheat('Not reduced by item use.','アイテム使っても減らない')
+#Hack('22 00 80 52 E3 03 1F AA ? ? ? ? 68 02 40 F9 C8 43 00 B5', 'mov w2, wzr') #暖心のフラスコ使用時 #v2.0.0
+Hack('22 00 80 52 E3 03 1F AA ? ? ? ? 68 02 40 F9 A8 43 00 B5', 'mov w2, wzr') #暖心のフラスコ使用時
+Hack('22 00 80 52 E3 03 1F AA 3A 00 80 52 ? ? ? ? ? ? ? ? 68 A2 40 B9', 'mov w2, wzr') #ボーガン、アイテム投げる
+Hack('E2 03 01 2A 01 30 41 B9', 'mov w2, wzr') #スキル習得
+Hack('E2 03 01 2A 01 34 41 B9', 'mov w2, wzr') #スキル習得解除
+Hack('22 00 80 52 E3 03 1F AA ? ? ? ? 7B 56 40 F9 FB 11 00 B4','mov w2, wzr') #装備品作成時素材
+Hack('22 00 80 52 E3 03 1F AA ? ? ? ? 74 56 40 F9','mov w2, wzr') #装備品強化時素材
+#Hack('E2 03 18 2A E0 03 1B AA', 'mov w2, wzr') #討伐用アイテム、補充時の薬草 v2.0.0
+Hack('E2 03 18 2A E0 03 1C AA', 'mov w2, wzr') #討伐用アイテム、補充時の薬草
+
+addr=AOB('E0 03 14 AA E1 03 13 AA ? ? ? ? E1 03 00 2A')+0x48
+CodeK=GetCodeK()
+for rate in (1.5, 2.0, 3.0, 4.0, 5.0, 10.0, 100.0, 1000.0):
+SetCodeK(CodeK)
+AddCheat('Salt gain x{:.1f}'.format(rate) , 'ソルト獲得量{:.1f}倍'.format(rate))
+CodeCave(addr, (
+'fadd s0, s0, s1',
+'ldr s1, {end}-4',
+'fmul s0, s0, s1',
+'ret',
+Float2DWord(rate)
+))
+
+addr=AOB('00 01 40 F9 08 64 42 79 68 00 50 36 08 E0 40 B9 68 01 00 34 E0 03 1F AA ? ? ? ? 19 00 00 12')
+CodeK=GetCodeK()
+for rate in (1.5, 2.0, 2.5, 3.0, 4.0, 5.0):
+SetCodeK(CodeK)
+AddCheat('Movement speed x{:.1f}'.format(rate),'移動速度{:.1f}倍'.format(rate))
+CodeCave(addr, (
+'ldr x0, [x8]',
+'ldr s1, {end}-4',
+'fmul s13, s13, s1',
+'ret',
+Float2DWord(rate)
+))
+
+AddCheat('No fall damage','落下ダメージなし')
+Hack('40 09 20 1E 20 39 20 1E','fmov s0, wzr')
+
+CharMgr_TypeInfo=[GetQword(GetADRP(AOB('B5 ? ? F9 D6 ? ? F9 F4 03 1F 2A A0 02 40 F9')))]
+# キャラマネージャー
+CharMgr = CharMgr_TypeInfo + [0xB8,0]
+# キャラクター1人目
+ambientChar1 = CharMgr + [0x20]
+# loc_x=ambientChar1 + [0xfc] # v2.0.0
+# loc_y=ambientChar1 + [0x100] # v2.0.0
+# traj1=ambientChar1 + [0x104] # v2.0.0
+# traj2=ambientChar1 + [0x108] # Y軸方向への加速度 # v2.0.0
+# floating = ambientChar1 + [0x108] #bool # v2.0.0
+loc_x=ambientChar1 + [0x104]
+loc_y=ambientChar1 + [0x108]
+traj1=ambientChar1 + [0x10c]
+traj2=ambientChar1 + [0x110] # Y軸方向への加速度
+floating = ambientChar1 + [0x12c] #bool
+
+AddCheat('Moon Jump','ムーンジャンプ')
+AddCheatCode(ButtonCode(('l3down','b')))
+AddCheatCode(PointerCodeElseBlock())
+AddCheatCode(ButtonCode('b'))
+PointerHack(traj2,Float2DWord(-950))
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(PointerCodeEndBlock())
+
+AddCheat('No Rage & MP required','必要消費レイジ＆ＭＰゼロ')
+Hack('00 41 20 1E F6 57 43 A9 F9 0F 40 F9 F8 5F 42 A9', 'fmov s0, wzr')
+
+AddCheat('No materials required when creating equipment','装備品作成時素材必要なし')
+Hack(AOB('68 1A 40 B9 1F 01 14 6B 68 00 00 54 E0 03 1F AA ? ? ? ? 68 0A 40 F9 08 4D 34 8B')+0x24,'mov w0, wzr')
+
+AddCheat('No materials required when reinforcing items for defeat','討伐用アイテム強化時素材必要なし')
+Hack('00 25 40 B9 F4 4F 42 A9 F6 57 41 A9', 'mov w0, wzr')
+
+AddCheat('No materials required when reinforcing equipment','装備品強化時素材必要なし')
+Hack('39 D9 68 B8', 'mov w25, wzr')
+Hack('39 00 80 52 B9 C3 1F B8', 'mov w25, wzr')
+#Hack('28 D9 68 B8 ? ? ? ? 28 00 80 52 A8 C3 1F B8', 'mov w8, wzr') # v2.0.0
+Hack('28 D9 68 B8 ? ? ? ? 28 00 80 52 E8 0F 00 B9', 'mov w8, wzr')
+#Hack('28 00 80 52 A8 C3 1F B8 ? ? ? ? 7B ? ? F9', 'mov w8, wzr') # v2.0.0
+Hack('28 00 80 52 E8 0F 00 B9 ? ? ? ? D6 ? ? F9', 'mov w8, wzr')
+Hack('3C D9 68 B8 60 02 40 F9', 'mov w28, wzr')
+Hack('3C 00 80 52 60 02 40 F9', 'mov w28, wzr')
+
+AddCheat('No runeskill cooldowns','ルーンスキルクールダウン０')
+Hack('00 41 20 1E F6 57 44 A9 F8 5F 43 A9 FA 67 42 A9 FD 7B 41 A9 E8 07 46 FC C0 03 5F D6 C8 1A 40 B9', 'fmov s0, wzr')
+
+AddCheat('GetInvasionCooldowns')
+Hack('FD 7B BF A9 FD 03 00 91 08 2C 40 F9 28 04 00 B4 09 0D 40 F9', ('mov w0, #1','ret'))
+
+AddCheat('GetAttackCooldown')
+Hack(AOB('68 0A 40 F9 08 89 40 F9')+0xc, 'fmov s0, wzr')
+
+AddCheat('GetStrongCooldown')
+Hack(AOB('68 0A 40 F9 08 99 40 F9')+0xc, 'fmov s0, wzr')
+
+AddCheat('GetSpecialCooldown')
+Hack(AOB('68 0A 40 F9 08 A9 40 F9 A8 00 00 B4')+0xc, 'fmov s0, wzr')
+
+AddCheat('GetDodgeCooldown')
+Hack(AOB('68 0A 40 F9 08 15 41 F9')+0xc, 'fmov s0, wzr')
+
+AddCheat('GetShieldCooldown')
+Hack(AOB('68 0A 40 F9 08 05 41 F9')+0xc, 'fmov s0, wzr')
+
+#addr=AOB('00 11 40 F9 00 31 00 B4') # v2.0.0
+addr=AOB('00 11 40 F9 A0 30 00 B4')
+CodeK=GetCodeK()
+for rate in (1.5, 2.0, 2.5, 3.0):
+SetCodeK(CodeK)
+AddCheat('Action speed x{:.1f}'.format(rate),'行動速度{:.1f}倍'.format(rate))
+CodeCave(addr, (
+'ldr x0, [x8,#0x20]',
+'ldr w7, [x8,#0xa0]',
+'tbnz w7, #0x1f, .+12',
+'ldr s0, {end}-4',
+'fmul s9, s9, s0',
+'ret',
+Float2DWord(rate)
+))
+#----------------------------------- Fashion Dreamer -----------------------------------
+CodeK=GetCodeK()
+addr=AOB('61 6A 68 BC E0 03 1F AA')
+for rate in (1.5, 2.0, 3.0, 4.0, 5.0):
+SetCodeK(CodeK)
+AddCheat('Move Speed x{:.1f}'.format(rate),'移動速度{:.1f}倍'.format(rate))
+CodeCave(addr, (
+'ldr s1, [x19,x8]',
+'fmov s9, #{:.1f}'.format(rate),
+'fmul s1, s1, s9',
+'ret'
+))
+
+AddCheat('Stops quickly','直ぐ止まる')
+Hack('4B 00 00 54 1F 3D 00 B9','nop')
+Hack('4B FE FF 54 1F 3D 00 B9','nop')
+Hack('02 01 27 1E 00 20 22 1E A5 0E 00 54','fmov s2, wzr')
+Hack('F4 53 88 1A','csel w20, wzr, wzr, pl')
+
+AddCheat('EPoint Max','Eポイント最大')
+CodeCave(AOB('88 02 40 F9 F4 4F 41 A9 08 5D 40 F9 08 01 40 F9 08 41 40 F9 00 45 40 B9')+0x14,(
+'mov w0, #0xC9FF',
+'movk w0, #0x3B9A, lsl#16',
+'str w0, [x8,#0x44]',
+'ret'
+))
+
+AddCheat('Ticket Max','チケット枚数最大')
+CodeCave(AOB('C2 02 40 F9 E0 03 13 AA E1 03 15 AA ? ? ? ? 40 00 00 B4 00 14 40 B9')+0x14,(
+'mov x8, x0',
+'mov w0, #999',
+'str w0, [x8,#0x14]',
+'ret'
+))
+
+AddCheat('Creative Key Max','クリエイティブキー最大')
+CodeCave(AOB('88 02 40 F9 F4 4F 41 A9 08 5D 40 F9 08 01 40 F9 08 41 40 F9 00 49 40 B9')+0x14,(
+'mov w0, #0x869F',
+'movk w0, #1, lsl#16',
+'str w0, [x8,#0x44]',
+'ret'
+))
+
+AddCheat('LookAt result 3 hearts','ルカット結果ハート3')
+Hack('29 71 40 39 4A 71 40 39', ('mov w9, #1','mov w10, #1'))
+Hack('5F 01 00 71 EA D7 9F 1A EB 83 00 39', ('mov w10, #1','mov w11, #1'))
+
+addr=AOB('F3 03 01 2A 88 ? ? 39 C8 00 00 37 ? ? ? ? 00 ? ? F9 ? ? ? ? 28 00 80 52 88 ? ? 39 ? ? ? ? ? ? ? ? B5 ? ? F9')
+AddCheat('Brand Exp x2','ブランド経験値増加量2倍')
+Hack(addr,'add w19, wzr, w1, lsl#1')
+AddCheat('Brand Exp x3','ブランド経験値増加量3倍')
+Hack(addr,'add w19, w1, w1, lsl#1')
+AddCheat('Brand Exp x4','ブランド経験値増加量4倍')
+Hack(addr,'add w19, wzr, w1, lsl#2')
+AddCheat('Brand Exp x5','ブランド経験値増加量5倍')
+Hack(addr,'add w19, w1, w1, lsl#2')
+AddCheat('Brand Exp x8','ブランド経験値増加量8倍')
+Hack(addr,'add w19, wzr, w1, lsl#3')
+AddCheat('Brand Exp x16','ブランド経験値増加量16倍')
+Hack(addr,'add w19, wzr, w1, lsl#4')
+AddCheat('Brand Exp x32','ブランド経験値増加量32倍')
+Hack(addr,'add w19, wzr, w1, lsl#5')
+AddCheat('Brand Exp x64','ブランド経験値増加量64倍')
+Hack(addr,'add w19, wzr, w1, lsl#6')
+AddCheat('Brand Exp x128','ブランド経験値増加量128倍')
+Hack(addr,'add w19, wzr, w1, lsl#7')
+
+AddCheat('Brand Exp Max (Gain)','ブランド経験値取得で最大')
+Hack('A8 B2 93 9A','csel x8, x19, x19,lt')
+
+addr=AOB('F4 03 01 AA F3 03 00 AA C8 00 00 37 ? ? ? ? 00 ? ? F9 ? ? ? ? 28 00 80 52 C8 ? ? 39 E0 03 13 AA E1 03 1F AA ? ? ? ? A0 02 40 F9 76 32 40 F9')
+AddCheat('virtual follower increase x2','バーチャルフォロワー増加人数2倍')
+Hack(addr,'add x20, xzr, x1, lsl#1')
+AddCheat('virtual follower increase x3','バーチャルフォロワー増加人数3倍')
+Hack(addr,'add x20, x1, x1, lsl#1')
+AddCheat('virtual follower increase x4','バーチャルフォロワー増加人数4倍')
+Hack(addr,'add x20, xzr, x1, lsl#2')
+AddCheat('virtual follower increase x5','バーチャルフォロワー増加人数5倍')
+Hack(addr,'add x20, x1, x1, lsl#2')
+AddCheat('virtual follower increase x8','バーチャルフォロワー増加人数8倍')
+Hack(addr,'add x20, xzr, x1, lsl#3')
+AddCheat('virtual follower increase x16','バーチャルフォロワー増加人数16倍')
+Hack(addr,'add x20, xzr, x1, lsl#4')
+AddCheat('virtual follower increase x32','バーチャルフォロワー増加人数32倍')
+Hack(addr,'add x20, xzr, x1, lsl#5')
+AddCheat('virtual follower increase x64','バーチャルフォロワー増加人数64倍')
+Hack(addr,'add x20, xzr, x1, lsl#6')
+AddCheat('virtual follower increase x128','バーチャルフォロワー増加人数128倍')
+Hack(addr,'add x20, xzr, x1, lsl#7')
+
+AddCheat('Virtual follower increase to Max','バーチャルフォロワー人数増加で最大')
+Hack('88 B2 88 9A 08 FD A8 8A 68 32 00 F9 F4 4F 42 A9 FD 7B C3 A8 C0 03 5F D6 ? ? ? ? ? ? ? ? D4 02 14 8B','csel x8, x8, x8,lt')
+
+AddCheat('Parts Item Unlock','パーツアイテムアンロック')
+Hack(AOB3('1F 20 03 D5 00 70 00 91 21 00 80 52 E2 03 1F AA','00 70 00 91'),('mov w0, #1','ret'))
+
+AddCheat('Katagami Unlock','型紙アンロック')
+Hack(AOB3('60 CE 01 B8','21 00 80 52'),('mov w0, #1','ldp x29, x30, [sp],#0x50','ret'))
+Hack(AOB3('E8 12 40 F9 08 25 40 B9','E8 16 40 B9'),('mov w8, #99','str w8, [x23,#0x14]','b .+40'))
+
+AddCheat('Consumption pattern paper use does not reduce','消費型紙使っても減らない')
+Hack('08 01 13 6B 6A 00 00 54','subs w8, w8, wzr')
+
+AddCheat('Photo Item Num Max (Changed)','フォトアイテム個数変動で最大')
+Hack('88 B2 88 1A 08 7D A8 0A 68 1A 00 B9 7F 02 00 F1','csel w8, w8, w8, lt')
+Hack('68 B2 88 1A 08 7D A8 0A C8 1A 00 B9','csel w8, w8, w8, lt')
+Hack(AOB3('D4 02 14 0B A8 ? ? 39 08 03 00 34','88 B2 88 1A'),'csel w8, w8, w8, lt')
+
+AddCheat('Gacha rarity setting','ボタン押下中回すでガチャレアリティ設定 L(R)ZL+十字時計回り1-4(5-8)9-10')
+CodeK=GetCodeK()
+CodeCave('E1 03 1F AA F7 03 00 AA ? ? ? ? 1F 03 16 6B',(
+'ldr w1, {end}-4',
+'tbnz w1, #4, .+20',
+'mov w24, w1',
+'sub w1, w22, #1',
+'cmp w24, w22',
+'csel w24, w1, w24, cs',
+'mov x1, xzr',
+'ret',
+0x10
+))
+Hack(CodeK-4,0,showRestoreCode=False,useButton=('l','up'))
+Hack(CodeK-4,1,showRestoreCode=False,useButton=('l','right'))
+Hack(CodeK-4,2,showRestoreCode=False,useButton=('l','down'))
+Hack(CodeK-4,3,showRestoreCode=False,useButton=('l','left'))
+Hack(CodeK-4,4,showRestoreCode=False,useButton=('r','up'))
+Hack(CodeK-4,5,showRestoreCode=False,useButton=('r','right'))
+Hack(CodeK-4,6,showRestoreCode=False,useButton=('r','down'))
+Hack(CodeK-4,7,showRestoreCode=False,useButton=('r','left'))
+Hack(CodeK-4,8,showRestoreCode=False,useButton=('zl','up'))
+Hack(CodeK-4,9,showRestoreCode=False,useButton=('zl','right'))
+
+AddCheat('Color Pallete Unlock','カラーパレットアンロック')
+tgtAddr=SearchPrevASM(AOB('88 02 40 F9 E1 03 1F AA 08 5D 40 F9 08 01 40 F9 08 95 40 F9'),'STP','X29')
+CodeCave(AOB2('88 02 40 F9 08 5D 40 F9 08 01 40 F9 00 29 40 F9 ? ? ? ? 20 07 00 36',0x10,'F3 03 00 AA'),(
+'stp x29, x30, [sp,#-0x10]!',
+'mov x19, x0',
+'bl %d-{here}'%tgtAddr,
+'ldp x29, x30, [sp],#0x10',
+'ret'
+))
+#----------------------------------- Momotaro Dentetsu World - The Earth revolves with hope -----------------------------------
+AddCheat('Human Player Moeny Max','人間プレイヤー所持金最大')
+CodeK=RegCodeK(8)
+CodeCave('00 15 40 F9 F4 4F 42 A9 F5 0B 40 F9 FD 7B C3 A8 C0 03 5F D6 E0 03 1F AA',(
+'ldr x0, [x8,#0x28]',
+'ldrb w7, [x8,#0x23]',
+'cmp w7, #1',
+'b.ne .+12',
+'ldr x0, {end}',
+'str x0, [x8,#0x28]',
+'ret'
+))
+Hack(CodeK, Value2QWord(9999999999))
+
+#addr=AOB2('E0 03 14 AA E1 03 16 2A E2 03 15 AA ? ? ? ? 60 8E 01 F8',0xc,'F4 03 01 2A') # v1.0.1
+addr=AOB2('E0 03 15 AA E1 03 16 2A E2 03 14 AA E3 03 1F AA ? ? ? ? 60 8E 01 F8 E1 03 00 AA E0 03 13 AA ? ? ? ? A8 00 80 52 ? ? ? ? ? ? ? ? 08 ? ? F9',0x10,'F4 03 01 2A')
+CodeK=RegCodeK(4)
+for num in range(1,8):
+SetCodeK(CodeK)
+AddCheat('Number of dice %d holding ZL'%num,'ZL押下中サイコロ%d個'%num)
+CodeCave(addr,(
+'mov w20, w1',
+'ldr w7, {end}',
+'cbz w7, .+8',
+'mov w20, #%d'%num,
+'ret'
+))
+Hack(CodeK,1,useButton='zl')
+
+AddCheat('Remaining mass Press down while moving(ZL Unchanged ZR 0)','あと何マス 移動時押下(ZL 変更されない ZR 0)')
+CodeK=RegCodeK()
+CodeCave('29 01 0A 0B 09 19 00 B9 60 32 40 F9',(
+'add w7, w9, w10',
+'ldr w0, {end}',
+'cbz w0, .+12',
+'cmp w0, #2',
+'csel w7, wzr, w10, eq',
+'mov w0, #99',
+'cmp w7, w0',
+'csel w7, w0, w7, gt',
+'mov w9, w7',
+'ret'
+))
+Hack(CodeK,1,useButton='zl')
+Hack(CodeK,2,showRestoreCode=False,useButton='zr')
+
+AddCheat('Otanoshimi Vaccine Development Property Available','お楽しみメニュー：歴史ヒーロー')
+Hack('40 00 00 54 18 03 1F 32', 'nop')
+
+AddCheat('Otanoshimi Detective Agency Available','お楽しみメニュー：探偵社')
+Hack('14 01 97 1A', 'csel w20, w8, w8, eq')
+
+AddCheat('Otanoshimi Arrived at all stations Available','お楽しみメニュー：全駅踏破')
+Hack('? ? ? ? 08 03 1C 32', 'mov w0, #1')
+
+AddCheat('Otanoshimi Point Available','お楽しみメニュー：ポイント')
+Hack('? ? ? ? 1F 1C 00 72 E0 02 40 F9 08 03 1B 32', 'mov w0, #1')
+
+AddCheat('Otanoshimi Find the Eight Great Treasures Available','お楽しみメニュー：八大財宝を探せ')
+Hack('98 02 8A 1A', 'csel w24, w10, w10, eq')
+
+AddCheat('Otanoshimi Find the eight major UMAs Available','お楽しみメニュー：八大UMAを探せ')
+Hack('18 11 98 1A 08 E0 40 B9', 'csel w24, w8, w8, ne')
+
+AddCheat('Otanoshimi Arrival Count Available','お楽しみメニュー：到着回数')
+Hack('? ? ? ? 1F 1C 00 72 E0 02 40 F9 08 20 81 52', 'mov w0, #1')
+
+AddCheat('Otanoshimi IT Property List Available','お楽しみメニュー：ＩＴ物件一覧')
+Hack('? ? ? ? 1F 1C 00 72 E0 02 40 F9 08 40 82 52', 'mov w0, #1')
+
+AddCheat('Otanoshimi Vaccine Development Property Available','お楽しみメニュー：ワクチン開発物件')
+Hack('? ? ? ? 08 80 84 52 1F 1C 00 72', 'mov w0, #1')
+
+#フラグマネージャー
+GmFlagManager=[GetQword(GetADRP(AOB('0D6 ? ? F9 A0 02 40 F9 08 E0 40 B9 C8 06 00 34'))), 0x20, 0xc0, 0, 0xb8, 0]
+m_gmSoFlag=GmFlagManager+[0x18] # GmSoFlag
+m_gmSoGameSettings=GmFlagManager+[0x20] # GmSoGameSettings
+
+_sys_flag=m_gmSoFlag+[0x18] # byte[] const int SYS_FLAG_NUM = 128;
+_game_flag=m_gmSoFlag+[0x20] # byte[] const int GAME_FLAG_NUM = 768;
+_debug_flag=m_gmSoFlag+[0x28] # byte[] const int DEBUG_FLAG_NUM = 384;
+_mes_flag=m_gmSoFlag+[0x30] # byte[]
+
+#プレイヤーマネージャー
+PlayerManager=[GetQword(GetADRP(AOB('08 ? ? F9 00 01 40 F9 ? ? ? ? 00 29 00 B4 62 22 40 F9'))), 0x20, 0xc0, 0, 0xb8, 0]
+m_gmSoGameSettings=PlayerManager+[0x18] # GmSoGameSettings
+m_gmSoHistory=PlayerManager+[0x20] # GmSoHistory
+m_playerObj=PlayerManager+[0x28] # GameObject
+m_gmSoPlayer=PlayerManager+[0x30] # GmSoPlayerStatus
+m_systemPid=PlayerManager+[0x38] # ePLAYER_NUM
+m_gmNetPlayer=PlayerManager+[0x40] # GmNetPlayer
+m_pClone=PlayerManager+[0x48] # GameObject[]
+m_gmTrains=PlayerManager+[0x50] # GmTrain[]
+_comConstant=PlayerManager+[0x58] # DBSo_ComConstant
+ignorePlayerStatusWhenBonbiBiting=PlayerManager+[0x60] # List<ePLAYER_STATUS>
+ERROR_CARD=PlayerManager+[0x68] # readonly
+_ignoreStatusForBonbiBiting=PlayerManager+[0x70] # bool
+wealthRankingOnMonthStart=PlayerManager+[0x78] # int[]
+evtZenekiTargetLocal9=PlayerManager+[0x80] # int[]
+tmpHeliportTargetListDic=PlayerManager+[0x88] # Dictionary<string,
+HistoryModeWorkValues=PlayerManager+[0x90] # long[]
+statusAtOutOfAction=PlayerManager+[0x98] # int[]
+boardPlayer=PlayerManager+[0xA0] # int
+reservedVehicleAnimSyncPlayerList=PlayerManager+[0xA8] # List<int>
+m_netWaitState=PlayerManager+[0xB0] # PlayerManager.eNET_WAIT[]
+m_netWaitParam=PlayerManager+[0xB8] # int[]
+m_isStampAllOpen=PlayerManager+[0xC0] # bool[]
+
+for pNo in range(4):
+player = m_gmSoPlayer+[0x18,0x20+pNo*8]
+AddCheat('P%d Money +(-)999trillion R3Push+Up(Down)'%(pNo+1),'プレイヤー%d 持ち金 +(-)999兆 右スティック押込＋上（下）'%(pNo+1))
+AddCheatCode(PointerCodeHeader(player))
+AddCheatCode(PointerCodeArithmetic('+',r2=0x28))
+AddCheatCode(ButtonCode(('r3','up'),code=PointerCodeWrite(8,Value2QWord(9999999999),use_D=False)))
+AddCheatCode(ButtonCode(('r3','down'),code=PointerCodeWrite(8,Value2QWord('FFFFFFFDABF41C01'),use_D=False)))
+
+cards = player+[0x70]
+AddCheat('P%d Card1ID Change(Right+1 Left-1)'%(pNo+1),'プレイヤー%d カード1枚目ID変更(右+1 左-1)'%(pNo+1))
+AddCheatCode(PointerCodeHeader(cards+[0x20]))
+AddCheatCode(PointerCodeArithmetic('mov','E'))
+AddCheatCode(PointerCodeAddOffset(0x10,register='E',length=2))
+AddCheatCode(PointerCodeArithmetic('mov','D','E'))
+AddCheatCode(ButtonCode('right',code=PointerCodeArithmetic('+','D','E',1,length=2)))
+AddCheatCode(ButtonCode('left',code=PointerCodeArithmetic('-','D','E',1,length=2)))
+AddCheatCode(PointerCodeCondition('D','>',0x81,length=2))
+AddCheatCode(PointerCodeArithmetic('mov','D','E'))
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(PointerCodeStoreRegisterValueToRegisterAddress(length=2,offset=0x10))
+
+AddCheat('P%d TankCardGauge Full'%(pNo+1),'プレイヤー%d タンクカードゲージフル'%(pNo+1))
+PointerFillArray(cards,8,0x12,0,length=2)
+
+#ボンビーマネージャー
+BonbiManager=[GetQword(GetADRP(AOB('39 ? ? F9 20 03 40 F9 ? ? ? ? 60 15 00 B4'))), 0x20, 0xc0, 0, 0xb8, 0]
+Bonbi = BonbiManager+[0x18]
+Bonbi_player = Bonbi + [0x10]
+Bonbi_lastplayer = Bonbi + [0x14]
+Bonbi_type = Bonbi + [0x18]
+Bonbi_fplayer = Bonbi + [0x1C]
+Bonbi_sidx = Bonbi + [0x20]
+Bonbi_life = Bonbi + [0x24]
+
+AddCheat('Bonbi Type Change(ZL+UpRiDwLeLSticUpRiDwLePush Type0-8)','ボンビータイプ変更（ZL+上右下左LStick上右下左押込 タイプ0-8）')
+PointerHack(Bonbi_type,0,useButton=('zl','up')) # BINBOUGAMI = 0;
+AddCheatCode(ButtonCode(('zl','right')))
+AddCheatCode(PointerCodeWrite(4,1,use_D=False)) # MINIBONBI = 1;
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zl','down')))
+AddCheatCode(PointerCodeWrite(4,2,use_D=False)) # KINGBONBI = 2;
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zl','left')))
+AddCheatCode(PointerCodeWrite(4,3,use_D=False)) # KINGBONBI_Jr = 3;
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zl','l3up')))
+AddCheatCode(PointerCodeWrite(4,4,use_D=False)) # BIGBONBI = 4;
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zl','l3right')))
+AddCheatCode(PointerCodeWrite(4,5,use_D=False)) # BONBITRAIN = 5;
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zl','l3down')))
+AddCheatCode(PointerCodeWrite(4,6,use_D=False)) # KIZETSU = 6;
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zl','l3left')))
+AddCheatCode(PointerCodeWrite(4,7,use_D=False)) # ROCKBIRD = 7;
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zl','l3')))
+AddCheatCode(PointerCodeWrite(4,8,use_D=False)) # BARAMAKI = 8;
+AddCheatCode(PointerCodeEndBlock())
+
+AddCheat('Bonbi Player Change ZR+UpRiDwLe P1-P4','ボンビープレイヤー変更 ZR+上右下左 P1-P4')
+PointerHack(Bonbi_player,0,useButton=('zr','up'))
+AddCheatCode(ButtonCode(('zr','right')))
+AddCheatCode(PointerCodeWrite(4,1,use_D=False))
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zr','down')))
+AddCheatCode(PointerCodeWrite(4,2,use_D=False))
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(ButtonCode(('zr','left')))
+AddCheatCode(PointerCodeWrite(4,3,use_D=False))
+AddCheatCode(PointerCodeEndBlock())
+
+AddCheat('------------- Test Code Plyaer Status Setting Start -------------','------------- テストコード プレイヤー状態設定開始 -------------')
+from enum import Enum
+class PlyaerStats(Enum):
+FUUIN = 0
+GYUUHO = 1
+TOUMIN = 2
+TONDEN = 3
+YELLOW = 4
+HECCHARA = 5
+TOTSUNYU = 6
+OIDON_PAUSE = 7
+TOUMIN_BLOCK = 8
+BUTTOBI = 9
+GINJIUP = 10
+GINJIUPLIFE = 11
+KOGUN = 12
+MONOCHECK = 13
+HASSHOUCHI_0 = 14
+HASSHOUCHI_1 = 15
+HASSHOUCHI_2 = 16
+HASSHOUCHI_3 = 17
+COLDEST_CITY = 18
+OPEN_TOUHA = 19
+TOUHA = 20
+AHLOHAMEHA = 21
+CHANPONE = 22
+SHINKIRO = 23
+SHINKIRO_CNT = 24
+KURIONENNEE = 25
+PUPU = 26
+OTANOSHIMI = 27
+RALLY = 28
+BINGO0 = 29
+BINGO1 = 30
+BINGO2 = 31
+BINGO3 = 32
+BINGO4 = 33
+BINGO5 = 34
+BINGO6 = 35
+BINGO7 = 36
+BINGO8 = 37
+BINGOWORK = 38
+BIGENNER_CNT = 39
+LUCKY = 40
+LUCKYTYPE = 41
+LUCKYDICE = 42
+NOLUCKY = 43
+UNLUCKY = 44
+COMREPEAT = 45
+SHOPMODE = 46
+RANK = 47
+BONBI = 48
+ASHIDOME = 49
+CARD = 50
+PLUS = 51
+MINUS = 52
+SHOENEDICE = 53
+POINT = 54
+CAPITAL = 55
+ARRIVAL = 56
+IT_REVOLUTION = 57
+CORONA = 58
+SHINGEN_YAMA = 59
+KANBEE_MIZUZEME = 60
+KIYOMASA = 61
+TAKARA_CLT = 62
+NIZYUIKKYU = 63
+YOUKIHIEYE = 64
+YOUKIHIDANCE = 65
+YOUKIHITIME = 66
+ENMA_ZEKKOUCHOU = 67
+KAWARAWARI = 68
+NOBUYITEM = 69
+RESORT = 70
+DEKIN = 71
+SHAKESPEARELOVE = 72
+EINSTEIN_UNLUCKY = 73
+GANDHI_BOYCOTT = 74
+KATUSHIKA_WAVE = 75
+SPIRIT_GREAT_CONDITION_RESERVE = 76
+SPIRIT_GREAT_CONDITION_UNLUCKY = 77
+SPIRIT_LASSO_BIND = 78
+SPIRIT_REPAINT = 79
+REPAINT_OVERRIDE = 80
+HIKYOTANKEN = 81
+NKRUMAH_FUUIN = 82
+NKRUMAH_UNLUCKY = 83
+KINKYUCHAKURIKU = 84
+
+# 生成したいコードを登録
+codeCreateList=[
+PlyaerStats.FUUIN, #封印
+PlyaerStats.GYUUHO, #牛歩
+PlyaerStats.TOUMIN, #冬眠
+PlyaerStats.TONDEN,
+PlyaerStats.YELLOW,
+PlyaerStats.HECCHARA,
+PlyaerStats.TOTSUNYU,
+PlyaerStats.OIDON_PAUSE,
+PlyaerStats.TOUMIN_BLOCK,
+PlyaerStats.BUTTOBI,
+PlyaerStats.GINJIUP, #銀二遭遇率アップ
+PlyaerStats.GINJIUPLIFE,
+PlyaerStats.KOGUN,
+PlyaerStats.MONOCHECK,
+PlyaerStats.HASSHOUCHI_0,
+PlyaerStats.HASSHOUCHI_1,
+PlyaerStats.HASSHOUCHI_2,
+PlyaerStats.HASSHOUCHI_3,
+PlyaerStats.COLDEST_CITY,
+PlyaerStats.OPEN_TOUHA,
+PlyaerStats.TOUHA,
+PlyaerStats.AHLOHAMEHA,
+PlyaerStats.CHANPONE,
+PlyaerStats.SHINKIRO,
+PlyaerStats.SHINKIRO_CNT,
+PlyaerStats.KURIONENNEE,
+PlyaerStats.PUPU,
+PlyaerStats.OTANOSHIMI,
+PlyaerStats.RALLY,
+#PlyaerStats.BINGO0,
+#PlyaerStats.BINGO1,
+#PlyaerStats.BINGO2,
+#PlyaerStats.BINGO3,
+#PlyaerStats.BINGO4,
+#PlyaerStats.BINGO5,
+#PlyaerStats.BINGO6,
+#PlyaerStats.BINGO7,
+#PlyaerStats.BINGO8,
+PlyaerStats.BINGOWORK,
+PlyaerStats.BIGENNER_CNT,
+PlyaerStats.LUCKY,
+PlyaerStats.LUCKYTYPE,
+PlyaerStats.LUCKYDICE,
+PlyaerStats.NOLUCKY,
+PlyaerStats.UNLUCKY,
+PlyaerStats.COMREPEAT,
+PlyaerStats.SHOPMODE,
+PlyaerStats.RANK,
+PlyaerStats.BONBI,
+PlyaerStats.ASHIDOME,
+PlyaerStats.CARD,
+PlyaerStats.PLUS,
+PlyaerStats.MINUS,
+PlyaerStats.SHOENEDICE, #省エネ
+PlyaerStats.POINT,
+PlyaerStats.CAPITAL,
+PlyaerStats.ARRIVAL,
+PlyaerStats.IT_REVOLUTION,
+PlyaerStats.CORONA,
+PlyaerStats.SHINGEN_YAMA,
+PlyaerStats.KANBEE_MIZUZEME,
+PlyaerStats.KIYOMASA,
+PlyaerStats.TAKARA_CLT,
+PlyaerStats.NIZYUIKKYU,
+PlyaerStats.YOUKIHIEYE,
+PlyaerStats.YOUKIHIDANCE,
+PlyaerStats.YOUKIHITIME,
+PlyaerStats.ENMA_ZEKKOUCHOU,
+PlyaerStats.KAWARAWARI,
+PlyaerStats.NOBUYITEM, #カード買えない
+PlyaerStats.RESORT,
+PlyaerStats.DEKIN, #出禁
+PlyaerStats.SHAKESPEARELOVE,
+PlyaerStats.EINSTEIN_UNLUCKY,
+PlyaerStats.GANDHI_BOYCOTT,
+PlyaerStats.KATUSHIKA_WAVE,
+PlyaerStats.SPIRIT_GREAT_CONDITION_RESERVE,
+PlyaerStats.SPIRIT_GREAT_CONDITION_UNLUCKY,
+PlyaerStats.SPIRIT_LASSO_BIND,
+PlyaerStats.SPIRIT_REPAINT,
+PlyaerStats.REPAINT_OVERRIDE,
+PlyaerStats.HIKYOTANKEN,
+PlyaerStats.NKRUMAH_FUUIN,
+PlyaerStats.NKRUMAH_UNLUCKY,
+PlyaerStats.KINKYUCHAKURIKU,
+]
+for pNo in range(4):
+player = m_gmSoPlayer+[0x18,0x20+pNo*8]
+status = player+[0x50]
+for pstat in PlyaerStats:
+if not pstat in codeCreateList:continue
+AddCheat('P%d %s L(R)3Push On(Off)'%(pNo+1, pstat.name),'プレイヤー%d %s 左(右)スティック押込 設定(解除)'%(pNo+1, pstat.name))
+AddCheatCode(PointerCodeHeader(status))
+AddCheatCode(PointerCodeArithmetic('+',r2=0x20+pstat.value))
+AddCheatCode(ButtonCode('l3',code=PointerCodeWrite(1,1,use_D=False)))
+AddCheatCode(ButtonCode('r3',code=PointerCodeWrite(1,0,use_D=False)))
+
+AddCheat('------------- Test Code Plyaer Status Setting End -------------','------------- テストコード プレイヤー状態設定終了 -------------')
