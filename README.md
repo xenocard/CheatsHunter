@@ -16,6 +16,8 @@
 [**Hazerou**](https://www.404.com) \
 [**Nolberto82**](https://www.example.com) \
 [**Optantic**](https://www.youtube.com/user/optantic/videos) \
+[**ranma99vn**](https://www.youtube.com/) \
+[**OblivionReign**](https://pastebin.com/u/Arch9SK7) \
 [**Kaito B (怪盗B)**](https://www.tekqart.com/home.php?mod=space&uid=2230670&do=thread&type=thread&view=me&from=space) \
 [**Lulu5431**](https://www.tekqart.com/home.php?mod=space&uid=2518151&do=thread&type=thread&view=me&from=space) \
 [**a7251835**](https://www.tekqart.com/home.php?mod=space&uid=2256908&do=thread&type=thread&view=me&from=space) \
