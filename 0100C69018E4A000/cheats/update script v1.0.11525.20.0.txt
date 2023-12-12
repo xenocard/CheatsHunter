@@ -1,0 +1,156 @@
+AddCheat('Soul, item quantity 999,999,999','ナイクラクス、アイテム個数999,999,999')
+CodeCave('60 32 40 B9 F4 4F 41 A9 FD 7B C2 A8 C0 03 5F D6 1F 20 03 D5',(
+'ldr w0, {end}-4',
+'str w0, [x19,#0x30]',
+'ldp x20, x19, [sp,#0x10]',
+'ldp x29, x30, [sp],#0x20',
+'ret',
+Value2DWord(999999999)
+),use_BL=False)
+
+addr=AOB('08 01 00 0B 1F 01 00 71')
+AddCheat('Soul, item acquisition quantity x2','ナイクラクス、アイテム個数取得量x2倍')
+Hack(addr,'add w8, w8, w0, lsl#1')
+AddCheat('Soul, item acquisition quantity x4','ナイクラクス、アイテム個数取得量x4倍')
+Hack(addr,'add w8, w8, w0, lsl#2')
+AddCheat('Soul, item acquisition quantity x8','ナイクラクス、アイテム個数取得量x8倍')
+Hack(addr,'add w8, w8, w0, lsl#3')
+AddCheat('Soul, item acquisition quantity x16','ナイクラクス、アイテム個数取得量x16倍')
+Hack(addr,'add w8, w8, w0, lsl#4')
+AddCheat('Soul, item acquisition quantity x128','ナイクラクス、アイテム個数取得量x128倍')
+Hack(addr,'add w8, w8, w0, lsl#7')
+AddCheat('Soul, item acquisition quantity x1024','ナイクラクス、アイテム個数取得量x1024倍')
+Hack(addr,'add w8, w8, w0, lsl#10')
+
+AddCheat('HP Max','HP変動で最大')
+CodeCave('01 01 13 4B ? ? ? ? F4 4F 43 A9',(
+'sub w1, w8, w19',
+'ldr x7, [x20, #0x18]',
+'cbz x7, .+8',
+'ldr w1, [x0, #0x28]',
+'ret'
+))
+
+AddCheat('HP Max off','HP変動で最大 off')
+Hack('01 01 13 4B ? ? ? ? F4 4F 43 A9','sub w1, w8, w19')
+
+AddCheat('One Hit Kill while holding L','L押下中攻撃でワンヒットキル')
+CodeK=RegCodeK()
+CodeCave('08 2C 40 B9 E2 03 1F AA 01 01 13 4B ? ? ? ? F4 4F 43 A9',(
+'ldr w8, [x0, #0x2c]',
+'ldr w7, {end}',
+'cbz w7, .+16',
+'ldr x7, [x20, #0x18]',
+'cbnz x7, .+8',
+'mov w8, w19',
+'ret'
+))
+Hack(CodeK,1,useButton='l')
+
+AddCheat('One Hit Kill while holding L off','L押下中攻撃でワンヒットキル off')
+Hack('08 2C 40 B9 E2 03 1F AA 01 01 13 4B ? ? ? ? F4 4F 43 A9','ldr w8, [x0, #0x2c]')
+
+AddCheat('Concentration Max','集中力変動で最大')
+Hack('0A B1 8A 1A 1F 01 00 71 E8 B3 8A 1A 1F 01 09 6B 08 2C 00 B9','csel w10, w10, w10, lt')
+# Hack('01 01 09 4B F4 4F 42 A9','ldr w1, [x0,#0x28]') # v1.0.10891.20.0
+
+AddCheat('Concentration Max off','集中力変動で最大 off')
+Hack('0A B1 8A 1A 1F 01 00 71 E8 B3 8A 1A 1F 01 09 6B 08 2C 00 B9','csel w10, w8, w10, lt')
+# Hack('01 01 09 4B F4 4F 42 A9','sub w1, w8, w19') # v1.0.10891.20.0
+
+AddCheat('Power Max','パワー変動で最大')
+Hack('A1 02 08 4B F5 0F 40 F9','mov w1, #0x7fffffff')
+Hack('21 01 08 0B E2 03 1F AA','ldr w1, [x0,#0x28]')
+
+AddCheat('Power Max off','パワー変動で最大 off')
+Hack('A1 02 08 4B F5 0F 40 F9','sub w1, w21, w8')
+
+AddCheat('Soul, item quantity not dec','ナイトラクス、アイテム個数減らない')
+Hack('08 01 00 4B 1F 01 00 71','sub w8, w8, wzr')
+
+AddCheat('Soul, item quantity not dec off','ナイトラクス、アイテム個数減らない off')
+Hack('08 01 00 4B 1F 01 00 71','sub w8, w8, w0')
+
+addr=AOB('00 14 40 BD 01 3C 40 BD')
+CodeK=GetCodeK()
+for rate in (1.5,2.0,2.5,3.0,4.0):
+SetCodeK(CodeK)
+AddCheat('Move speed x{:.1f}'.format(rate), '移動速度{:.1f}倍'.format(rate))
+CodeCave(addr,(
+'ldr s0, [x0,#0x14]',
+'fmov s1, #{:.1f}'.format(rate),
+'fmul s0, s0, s1',
+'b {back}'
+),use_BL=False)
+
+AddCheat('Move speed xN off', '移動速度N倍 off')
+Hack(addr,'ldr s0, [x0,#0x14]')
+
+addr=AOB('00 10 40 BD 01 40 40 BD')
+CodeK=GetCodeK()
+for rate in (1.5,2.0,2.5,3.0,4.0):
+SetCodeK(CodeK)
+AddCheat('Jump power x{:.1f}'.format(rate), 'ジャンプ力{:.1f}倍'.format(rate))
+CodeCave(addr,(
+'ldr s0, [x0,#0x10]',
+'fmov s1, #{:.1f}'.format(rate),
+'fmul s0, s0, s1',
+'b {back}'
+),use_BL=False)
+
+AddCheat('Jump power xN off','ジャンプ力N倍 off')
+Hack(addr,'ldr s0, [x0,#0x10]')
+
+AddCheat('Moon jump holding L+B','Ｌ＋Ｂ押下中ムーンジャンプ')
+CodeK=RegCodeK()
+CodeCave('F4 03 00 AA E0 03 13 AA E1 03 1F AA ? ? ? ? 68 02 40 F9 F7 03 01 AA F5 03 00 AA 6B D6 40 BD',(
+#CodeCave('F4 03 00 AA E0 03 13 AA E1 03 1F AA ? ? ? ? 68 02 40 F9 F7 03 01 AA F5 03 00 AA 6B CA 40 BD',( # v1.0.10891.20.0
+'mov x20, x0',
+'ldr w7, {end}',
+'cbz w7, .+24',
+'ldr x0, [x0, #0x30]',
+'ldr x0, [x0, #0x10]',
+'ldr x0, [x0, #0x78]',
+'fmov s0, #10.0',
+'str s0, [x0,#0x44]',
+'ret'
+))
+Hack(CodeK,1,useButton=('l','b'))
+
+SetCodeK(CodeK+4)
+AddCheat('Moon jump','ムーンジャンプ')
+CodeK=RegCodeK()
+#CodeCave('F4 03 00 AA E0 03 13 AA E1 03 1F AA ? ? ? ? 68 02 40 F9 F7 03 01 AA F5 03 00 AA 6B CA 40 BD',( # 'v1.0.10891.20.0'
+CodeCave('F4 03 00 AA E0 03 13 AA E1 03 1F AA ? ? ? ? 68 02 40 F9 F7 03 01 AA F5 03 00 AA 6B D6 40 BD',(
+'mov x20, x0',
+'ldr w7, {end}',
+'cbz w7, .+24',
+'ldr x0, [x0, #0x30]',
+'ldr x0, [x0, #0x10]',
+'ldr x0, [x0, #0x78]',
+'fmov s0, #10.0',
+'str s0, [x0,#0x44]',
+'ret'
+))
+Hack(CodeK,0)
+AddCheatCode(ButtonCode('b'))
+Hack(CodeK,1)
+AddCheatCode(ButtonCode(('l3down','b')))
+Hack(CodeK,0)
+AddCheatCode(PointerCodeEndBlock())
+AddCheatCode(PointerCodeEndBlock())
+
+AddCheat('Moon jump off','ムーンジャンプ off')
+Hack('F4 03 00 AA E0 03 13 AA E1 03 1F AA ? ? ? ? 68 02 40 F9 F7 03 01 AA F5 03 00 AA 6B D6 40 BD', 'mov x20, x0')
+# Hack('F4 03 00 AA E0 03 13 AA E1 03 1F AA ? ? ? ? 68 02 40 F9 F7 03 01 AA F5 03 00 AA 6B CA 40 BD', 'mov x20, x0') # 'v1.0.10891.20.0'
+
+AddCheat('Invincible','無敵')
+CodeCave('E0 03 13 AA 08 ? ? F9 E2 03 1F AA 01 01 40 F9 ? ? ? ? 40 05 00 36 88 5E 40 F9',(
+'mov x0, x19',
+'mov w7, #1',
+'strb w7, [x20, #0x101]',
+'ret'
+))
+
+AddCheat('Invincible off','無敵 off')
+Hack('E0 03 13 AA 08 ? ? F9 E2 03 1F AA 01 01 40 F9 ? ? ? ? 40 05 00 36 88 5E 40 F9','mov x0, x19')
