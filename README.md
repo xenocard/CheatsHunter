@@ -24,7 +24,7 @@
 [**Shaohua Baishou (韶华白首)**](https://www.tekqart.com/home.php?mod=space&uid=2668346&do=thread&type=thread&view=me&from=space) \
 [w55212235333](https://www.tekqart.com/home.php?mod=space&uid=2754643&do=thread&type=thread&view=me&from=space)(Retired)
 
-**and more**
+**and more** 
 
 [**Cheats Hunter**  **Disocrd Invite Link**](https://discord.gg/DqUcuVBdah) \
 A Free Cheats Share Server, Welcome to Our Humble Server \
