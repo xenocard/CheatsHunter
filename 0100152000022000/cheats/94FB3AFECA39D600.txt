@@ -110,6 +110,10 @@
 040A0000 0083ABE4 42C80000
 040A0000 0019D4A0 EEB72A00
 
+[Ultrawide 21.9 Ration]
+04000000 003FA6BC EEB00A03
+[TheBoy]
+
 [This set of cheats is created by]
 00000000 00000000 00000000
 [Patjenova - Eiffel2018 - xTATU - Bubba, enjoy!]
